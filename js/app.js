@@ -8,16 +8,31 @@ import ClassNames from 'classnames';
 import {Block} from 'react-essence';
 
 // Components
-import MobileHeader from './components/header';
-import MobileFooter from './components/footer';
+import SilkHeader from './components/header';
+import SilkBlogMagazine from './components/blogmagazine';
+import SilkCommerce from './components/commerce';
+import SilkMedia from './components/media';
+import SilkWidgets from './components/widgets';
+import SilkForms from './components/forms';
+import SilkNavigation from './components/navigation';
+import SilkArticles from './components/articles';
+import SilkHeadersFooters from './components/headersfooters';
+import SilkFooter from './components/footer';
 
-
-class Mobile extends React.Component {
+class Silk extends React.Component {
 	render() {
         return(
         	<Block>
-        		<MobileHeader />        		
-                <MobileFooter />
+        		<SilkHeader />
+						<SilkBlogMagazine />
+						<SilkCommerce />
+						<SilkMedia />
+						<SilkWidgets />
+						<SilkForms />
+						<SilkNavigation />
+						<SilkArticles />
+						<SilkHeadersFooters />
+            <SilkFooter />
         	</Block>
         );
     }
@@ -25,7 +40,7 @@ class Mobile extends React.Component {
 
 ReactDOM.render(
 	<Block>
-		<Mobile />
+		<Silk />
 	</Block>
 	,
 	document.querySelector('.app')
