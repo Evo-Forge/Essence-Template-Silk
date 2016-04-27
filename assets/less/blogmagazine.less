@@ -1,3 +1,59 @@
 .silkBlogMagazine {
-  
+  .border {
+    border: 1px solid red;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.space-between {
+      justify-content: space-between;
+    }
+    &.space-around {
+      justify-content: space-around;
+    }
+  }
+  .bg-mountain {
+    background: linear-gradient( rgba(83, 93, 100, 0.4), rgba(83, 93, 100, 0.4) ), url('../img/munte.jpg') no-repeat;
+    background-size: cover;
+  }
+  .explore-btn {
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: inherit;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    &:hover, &:focus {
+      background: inherit;
+      border: 1px solid lightgrey;
+      outline: none;
+    }
+    &.read-btn {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+  }
+  .centered {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .half-w {
+    width: 50%;
+  }
+  .style-i-off {
+    font-size: 10px;
+    opacity: .5;
+  }
+  .bg-road {
+    background: linear-gradient( rgba(83, 93, 100, 0.4), rgba(83, 93, 100, 0.4) ), url('../img/road.png') no-repeat;
+    background-size: cover;
+  }
+  .v-align {
+    vertical-align: top;
+  }
+  .padding-r-15 {
+    padding-right: 15px;
+  }
 }
