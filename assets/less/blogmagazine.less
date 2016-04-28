@@ -12,6 +12,16 @@
     &.space-around {
       justify-content: space-around;
     }
+    &.start {
+      justify-content: flex-start;
+    }
+    &.top-bottom {
+      flex-wrap: wrap;
+      align-content: space-between;
+    }
+    &.end {
+      align-items: flex-end;
+    }
   }
   .bg-mountain {
     background: linear-gradient( rgba(83, 93, 100, 0.4), rgba(83, 93, 100, 0.4) ), url('../img/munte.jpg') no-repeat;
@@ -21,17 +31,13 @@
     font-size: 12px;
     padding-left: 15px;
     padding-right: 15px;
-    background: inherit;
+    background: transparent;
     border: 1px solid lightgrey;
     border-radius: 25px;
     &:hover, &:focus {
       background: inherit;
       border: 1px solid lightgrey;
       outline: none;
-    }
-    &.read-btn {
-      padding-top: 7px;
-      padding-bottom: 7px;
     }
   }
   .centered {
@@ -46,14 +52,82 @@
     font-size: 10px;
     opacity: .5;
   }
-  .bg-road {
-    background: linear-gradient( rgba(83, 93, 100, 0.4), rgba(83, 93, 100, 0.4) ), url('../img/road.png') no-repeat;
+  .bg-offroad {
+    background: url('../img/offroad.jpg') no-repeat;
     background-size: cover;
+    height: 398px;
+  }
+  .relative {
+    position: relative;
+  }
+  .btn-position {
+    position: absolute;
+    margin: 16px;
   }
   .v-align {
     vertical-align: top;
   }
   .padding-r-15 {
     padding-right: 15px;
+  }
+  .card-img {
+    .card-supporting-text:first-child {
+      padding: 0;
+    }
+    .card-supporting-text:nth-child(2) {
+      height: 294px;
+    }
+    .card {
+      box-shadow: none;
+    }
+    .card-suplimentary-actions {
+      border-top: 0;
+    }
+  }
+  .padding-16 {
+    padding: 16px;
+  }
+  .border-b {
+    border-bottom: 1px solid #eee;
+  }
+  .duster-card {
+    height: 722px;
+  }
+  .bg-style {
+    background:linear-gradient( rgba(83, 93, 100, 0.6), rgba(83, 93, 100, 0.6) ),  url('../img/style.jpg') center no-repeat;
+    background-size: cover;
+    height: 295px;
+  }
+  .e-avatar {
+    width: 45px;
+    border-radius: 50%;
+    padding: 0 8px;
+  }
+  .bg-trans {
+    background: url('../img/transfagarasan.png') no-repeat;
+    background-size: cover;
+    .card-supporting-text{
+      height: 363px;
+    }
+  }
+  .two-btn {
+    width: 78%;
+    border: 1px solid #eee;
+    border-radius: 25px;
+    button {
+      padding-left: 15px;
+      padding-right: 15px;
+      background-color: transparent;
+    }
+    button:first-child {
+      border-right: 1px solid lightgrey;
+    }
+  }
+  .bg-culture {
+    background: url('../img/culture.png') no-repeat;
+    background-size: cover;
+    .card-supporting-text {
+      height: 205px;
+    }
   }
 }
