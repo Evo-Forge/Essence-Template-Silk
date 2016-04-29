@@ -16,36 +16,33 @@ class SilkBlogMagazine extends React.Component {
         <Block classes={'silkBlogMagazine e-container e-padding-top-25'}>
           <Text type={'h1'} classes={'e-text-center e-display-1 e-text-blue-300'}> Blog / Magazine </Text>
           <Block classes={'e-row'}>
-            <Block classes={'brick brick-9'}>
-              <Block classes={'e-row'}>
-                <Block classes={'brick brick-12'}>
-                  <Card classes={'bg-mountain'}>
-                    <CardHeader>
-                      <Btn label={'food&drink'} ripple={true} type={'default'} classes={'e-text-grey-100 e-text-uppercase explore-btn'} />
-                    </CardHeader>
-                    <CardContent>
-                      <Text type={'h1'} classes={'e-text-capitalize e-text-white e-display-2'}><b>Stop gratuitous UI Animation</b></Text>
-                      <Text type={'p'} classes={'e-text-center e-subhead e-text-grey-200'}>
-                        Lorem ipsum dolor sit amet, nulla vidisse impedit vix et. Nam rebum explicari an, vidit nusquam vulputate sea.
-                      </Text>
-                      <Btn label={'read more'} ripple={true} classes={'e-text-grey-100 e-text-uppercase explore-btn'} />
-                    </CardContent>
-                    <CardFooter>
-                      <Block className={'e-margin-top-25 e-margin-bottom-25'}>
-                        <Text type={'a'} classes={'e-text-center e-caption'}>
-                          <Icon name={"image-lens"} className={"e-text-grey-200"} />
-                        </Text>
-                        <Text type={'a'} classes={'e-text-center e-caption'}>
-                          <Icon name={"image-lens"} className={"e-text-grey-200 v-align style-i-off"} />
-                        </Text>
-                        <Text type={'a'} classes={'e-text-center e-caption'}>
-                          <Icon name={"image-lens"} className={"e-text-grey-200 v-align style-i-off"} />
-                        </Text>
-                      </Block>
-                    </CardFooter>
-                  </Card>
-                </Block>
-              </Block>
+            <Block classes={'brick brick-9 flex col-direction space-between'}>
+              <Card classes={'bg-mountain flex top-bottom card-no-border e-no-margin'}>
+                <CardHeader classes={'e-text-center full-w'}>
+                  <Btn label={'food&drink'} ripple={true} type={'default'} classes={'e-text-grey-100 e-text-uppercase explore-btn'} />
+                </CardHeader>
+                <CardContent classes={'half-w e-text-center'}>
+                  <Text type={'h1'} classes={'e-text-capitalize e-text-white e-display-2'}><b>Stop gratuitous UI Animation</b></Text>
+                  <Text type={'p'} classes={'e-text-center e-subhead e-text-grey-200'}>
+                    Lorem ipsum dolor sit amet, nulla vidisse impedit vix et. Nam rebum explicari an, vidit nusquam vulputate sea.
+                  </Text>
+                  <Btn label={'read more'} ripple={true} classes={'e-text-grey-100 e-text-uppercase explore-btn'} />
+                </CardContent>
+                <CardFooter className={'full-w e-text-center'}>
+                  <Block className={'e-margin-top-25 e-margin-bottom-25'}>
+                    <Text type={'a'} classes={'e-text-center e-caption'}>
+                      <Icon name={"image-lens"} className={"e-text-grey-200"} />
+                    </Text>
+                    <Text type={'a'} classes={'e-text-center e-caption'}>
+                      <Icon name={"image-lens"} className={"e-text-grey-200 v-align style-i-off"} />
+                    </Text>
+                    <Text type={'a'} classes={'e-text-center e-caption'}>
+                      <Icon name={"image-lens"} className={"e-text-grey-200 v-align style-i-off"} />
+                    </Text>
+                  </Block>
+                </CardFooter>
+              </Card>
+
               <Block classes={'e-row flex space-between'}>
                 <Block classes={'brick brick-4 e-no-margin'}>
                   <Card className={'e-background-white e-no-margin e-no-padding'}>
@@ -73,12 +70,11 @@ class SilkBlogMagazine extends React.Component {
                     </CardFooter>
                   </Card>
                 </Block>
-                <Block classes={'brick brick-8 e-no-margin'}>
-                  <Card classes={'e-no-padding e-no-margin e-background-white card-img'}>
-                    <CardContent className={'flex space-between'}>
-                      <Block classes={'brick-8 e-no-margin'}>
-                        <Card className={'e-background-white e-no-margin'}>
-                          <CardHeader></CardHeader>
+                <Block classes={'brick brick-8 e-no-margin flex'}>
+                  <Card classes={'e-no-padding e-no-margin e-background-white card-img flex'}>
+                    <CardContent className={'flex space-between grow'}>
+                      <Block classes={'brick-8 e-no-margin flex space-between'}>
+                        <Card className={'e-background-white e-no-margin flex col-direction space-between'}>
                           <CardContent>
                             <Btn label={'cars & moto'} ripple={true} type={'default'} classes={'e-text-orange-A400 e-text-uppercase explore-btn orange'} />
                             <Text type={'strong'} classes={'e-text-left e-title e-padding-top-15 show'}> Lorem ipsum dolor sit amet, vel alia nominati efficiendi </Text>
@@ -107,10 +103,10 @@ class SilkBlogMagazine extends React.Component {
                 </Block>
               </Block>
             </Block>
-            <Block classes={'brick brick-3 e-no-margin'}>
+            <Block classes={'brick brick-3'}>
               <Card className={'e-background-white e-no-margin'}>
                 <CardHeader className={'border-b'}>
-                  <Text type={'p'} classes={'e-text-left e-title e-text-uppercase e-no-margin'}> News </Text>
+                  <Text type={'strong'} classes={'e-text-left e-subhead e-text-uppercase e-no-margin'}> News </Text>
                 </CardHeader>
                 <CardContent className={'duster-card'}>
                   <Image src={'assets/img/duster.jpg'} height={'150px'} width={'100%'} />
@@ -150,8 +146,8 @@ class SilkBlogMagazine extends React.Component {
           </Block>
 
           <Block classes={'e-row'}>
-            <Block classes={'brick brick-9 e-no-padding'}>
-              <Block classes={'e-row'}>
+            <Block classes={'brick brick-9'}>
+              <Block classes={' e-row flex'}>
                 <Block classes={'brick brick-4'}>
                   <Card className={'e-background-white e-no-margin e-no-padding'}>
                     <CardHeader classes={'e-no-padding relative'}>
@@ -230,13 +226,13 @@ class SilkBlogMagazine extends React.Component {
                         </Block>
                       </Block>
                       <Block classes={'e-background-deep-orange-400 flex e-v-end'}>
-                        <Image src={'assets/img/girl.png'} height={'333'}/>
+                        <Image src={'assets/img/girl.png'} height={'370'}/>
                       </Block>
                     </CardContent>
                   </Card>
                 </Block>
                 <Block classes={'brick brick-4'}>
-                  <Card className={'bg-culture'}>
+                  <Card className={'bg-culture e-no-margin'}>
                     <CardHeader>
                       <Btn label={'culture'} ripple={true} type={'default'} classes={'e-text-grey-100 e-text-uppercase explore-btn'} />
                     </CardHeader>
@@ -250,12 +246,12 @@ class SilkBlogMagazine extends React.Component {
                 </Block>
               </Block>
             </Block>
-            <Block classes={'brick brick-3'}>
+            <Block classes={'brick brick-3 grow'}>
               <Card className={'e-background-white e-no-margin'}>
-                <CardHeader className={'border-b'}>
-                  <Text type={'p'} classes={'e-text-center e-title e-text-uppercase e-no-margin'}>Latest</Text>
+                <CardHeader className={'border-b e-text-center'}>
+                  <Text type={'strong'} classes={'e-text-center e-subhead e-text-uppercase e-no-margin'}>Latest</Text>
                 </CardHeader>
-                <CardContent className={''}>
+                <CardContent className={'card-h-latest'}>
                   <List type={'navigation'}>
                     <ListItem className={'e-text-center'}>
                       <Btn label={'food & drink'} ripple={true} type={'default'} classes={'e-text-pink-700 e-text-uppercase explore-btn pink'} />
@@ -289,15 +285,64 @@ class SilkBlogMagazine extends React.Component {
             </Block>
           </Block>
 
-          <Block classes={'e-row border'}>
-            <Block classes={'brick brick-4 e-h-start e-v-center border'}>brick-4</Block>
-            <Block classes={'brick brick-4 e-h-center e-v-center border'}>brick-4</Block>
-            <Block classes={'brick brick-4 e-h-end e-v-center border'}>brick-4</Block>
+          <Block classes={'e-row'}>
+            <Block classes={'brick brick-12'}>
+              <Card classes={'e-background-white e-no-margin'}>
+               <CardContent classes={'flex'}>
+                 <Block classes={'flex margin-r-15'}>
+                   <Image src={'assets/img/castel1.png'} height={'75px'} className={'margin-r-15'} />
+                   <Block>
+                     <Text type={'p'} classes={'e-text-left e-subhead e-text-deep-purple-700 e-text-uppercase'}> Travel </Text>
+                     <Text type={'strong'} classes={'e-text-left e-subhead'}>Lorem ipsum dolor sit amet, ad vide ipsum delicatissimi sed. </Text>
+                   </Block>
+                 </Block>
+                 <Block classes={'flex margin-r-15'}>
+                   <Image src={'assets/img/castel1.png'} height={'75px'} className={'margin-r-15'} />
+                   <Block>
+                     <Text type={'p'} classes={'e-text-left e-subhead e-text-deep-purple-700 e-text-uppercase'}> Travel </Text>
+                     <Text type={'strong'} classes={'e-text-left e-subhead'}>Lorem ipsum dolor sit amet, ad vide ipsum delicatissimi sed. </Text>
+                   </Block>
+                 </Block>
+                 <Block classes={'flex margin-r-15'}>
+                   <Image src={'assets/img/castel1.png'} height={'75px'} className={'margin-r-15'} />
+                   <Block>
+                     <Text type={'p'} classes={'e-text-left e-subhead e-text-deep-purple-700 e-text-uppercase'}> Travel </Text>
+                     <Text type={'strong'} classes={'e-text-left e-subhead'}>Lorem ipsum dolor sit amet, ad vide ipsum delicatissimi sed. </Text>
+                   </Block>
+                 </Block>
+               </CardContent>
+              </Card>
+            </Block>
           </Block>
 
           <Block classes={'e-row border'}>
-            <Block classes={'brick brick-3 e-h-end e-v-end border'}>brick-3</Block>
-            <Block classes={'brick brick-9 e-h-start e-v-end border'}>brick-9</Block>
+            <Block classes={'brick brick-3 border'}>
+              <Card classes={'e-no-margin bg-chair'}>
+                <CardContent className={'e-text-center'}>
+                  <Block>
+                    <Btn label={'travel'} ripple={true} type={'default'} classes={'e-text-grey-100 e-text-uppercase explore-btn'} />
+                  </Block>
+                  <Block>
+                    <Text type={'h3'} classes={'e-title e-text-white e-padding-top-15'}>Best of Romania 2015: Revealing what roks </Text>
+                    <Text type={'p'} classes={'e-body1 e-text-grey-200 e-padding-top-15'}> I whipped the Scotch tape from my pocket and said </Text>
+                  </Block>
+                  <Block classes={'e-text-center'}>
+                    <Text type={'span'} classes={'e-text-center e-body1 e-text-grey-300'}>By Johnny Brava </Text>
+                  </Block>
+                </CardContent>
+              </Card>
+            </Block>
+            <Block classes={'brick brick-9 e-h-start e-v-end border'}>
+              <Card>
+                <CardContent>
+                   <Block className={'half-w'}>
+
+                   </Block>
+                   <Block className={'half-w'}>
+                   </Block>
+                </CardContent>
+              </Card>
+            </Block>
           </Block>
 
           <Block classes={'e-row border'}>

@@ -5,7 +5,6 @@
   .flex {
     display: flex;
     justify-content: center;
-    align-items: center;
     &.space-between {
       justify-content: space-between;
     }
@@ -21,6 +20,15 @@
     }
     &.end {
       align-items: flex-end;
+    }
+    &.stretch {
+      align-items: stretch;
+    }
+    &.col-direction {
+      flex-direction: column;
+    }
+    &.grow {
+      flex-grow: 1;
     }
   }
   .bg-mountain {
@@ -40,13 +48,11 @@
       outline: none;
     }
   }
-  .centered {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
   .half-w {
     width: 50%;
+  }
+  .full-w {
+    width: 100%;
   }
   .style-i-off {
     font-size: 10px;
@@ -55,7 +61,6 @@
   .bg-offroad {
     background: url('../img/offroad.jpg') no-repeat;
     background-size: cover;
-    height: 398px;
   }
   .relative {
     position: relative;
@@ -70,12 +75,17 @@
   .padding-r-15 {
     padding-right: 15px;
   }
+  .card-no-border {
+    .card-suplimentary-actions {
+      border-top: 0;
+    }
+  }
   .card-img {
     .card-supporting-text:first-child {
       padding: 0;
-    }
-    .card-supporting-text:nth-child(2) {
-      height: 294px;
+      .card-supporting-text {
+        padding: 16px;
+      }
     }
     .card {
       box-shadow: none;
@@ -90,13 +100,10 @@
   .border-b {
     border-bottom: 1px solid #eee;
   }
-  .duster-card {
-    height: 722px;
-  }
   .bg-style {
     background:linear-gradient( rgba(83, 93, 100, 0.6), rgba(83, 93, 100, 0.6) ),  url('../img/style.jpg') center no-repeat;
     background-size: cover;
-    height: 295px;
+    height: 300px;
   }
   .e-avatar {
     width: 45px;
@@ -107,11 +114,11 @@
     background: url('../img/transfagarasan.png') no-repeat;
     background-size: cover;
     .card-supporting-text{
-      height: 363px;
+      height: 368px;
     }
   }
   .two-btn {
-    width: 78%;
+    width: 85%;
     border: 1px solid #eee;
     border-radius: 25px;
     button {
@@ -127,7 +134,15 @@
     background: url('../img/culture.png') no-repeat;
     background-size: cover;
     .card-supporting-text {
-      height: 205px;
+      height: 242px;
     }
   }
+  .bg-chair {
+    background:linear-gradient( rgba(83, 93, 100, 0.6), rgba(83, 93, 100, 0.6) ),  url('../img/chair.jpg') center no-repeat;
+    background-size: cover;
+  }
+  .margin-r-15 {
+    margin-right: 15px;
+  }
+
 }

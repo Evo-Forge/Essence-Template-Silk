@@ -4,7 +4,6 @@
 .silkBlogMagazine .flex {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .silkBlogMagazine .flex.space-between {
   justify-content: space-between;
@@ -21,6 +20,15 @@
 }
 .silkBlogMagazine .flex.end {
   align-items: flex-end;
+}
+.silkBlogMagazine .flex.stretch {
+  align-items: stretch;
+}
+.silkBlogMagazine .flex.col-direction {
+  flex-direction: column;
+}
+.silkBlogMagazine .flex.grow {
+  flex-grow: 1;
 }
 .silkBlogMagazine .bg-mountain {
   background: linear-gradient(rgba(83, 93, 100, 0.4), rgba(83, 93, 100, 0.4)), url('../img/munte.jpg') no-repeat;
@@ -40,13 +48,11 @@
   border: 1px solid lightgrey;
   outline: none;
 }
-.silkBlogMagazine .centered {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
 .silkBlogMagazine .half-w {
   width: 50%;
+}
+.silkBlogMagazine .full-w {
+  width: 100%;
 }
 .silkBlogMagazine .style-i-off {
   font-size: 10px;
@@ -55,7 +61,6 @@
 .silkBlogMagazine .bg-offroad {
   background: url('../img/offroad.jpg') no-repeat;
   background-size: cover;
-  height: 398px;
 }
 .silkBlogMagazine .relative {
   position: relative;
@@ -70,11 +75,14 @@
 .silkBlogMagazine .padding-r-15 {
   padding-right: 15px;
 }
+.silkBlogMagazine .card-no-border .card-suplimentary-actions {
+  border-top: 0;
+}
 .silkBlogMagazine .card-img .card-supporting-text:first-child {
   padding: 0;
 }
-.silkBlogMagazine .card-img .card-supporting-text:nth-child(2) {
-  height: 294px;
+.silkBlogMagazine .card-img .card-supporting-text:first-child .card-supporting-text {
+  padding: 16px;
 }
 .silkBlogMagazine .card-img .card {
   box-shadow: none;
@@ -88,13 +96,10 @@
 .silkBlogMagazine .border-b {
   border-bottom: 1px solid #eee;
 }
-.silkBlogMagazine .duster-card {
-  height: 722px;
-}
 .silkBlogMagazine .bg-style {
   background: linear-gradient(rgba(83, 93, 100, 0.6), rgba(83, 93, 100, 0.6)), url('../img/style.jpg') center no-repeat;
   background-size: cover;
-  height: 295px;
+  height: 300px;
 }
 .silkBlogMagazine .e-avatar {
   width: 45px;
@@ -106,10 +111,10 @@
   background-size: cover;
 }
 .silkBlogMagazine .bg-trans .card-supporting-text {
-  height: 363px;
+  height: 368px;
 }
 .silkBlogMagazine .two-btn {
-  width: 78%;
+  width: 85%;
   border: 1px solid #eee;
   border-radius: 25px;
 }
@@ -126,7 +131,14 @@
   background-size: cover;
 }
 .silkBlogMagazine .bg-culture .card-supporting-text {
-  height: 205px;
+  height: 242px;
+}
+.silkBlogMagazine .bg-chair {
+  background: linear-gradient(rgba(83, 93, 100, 0.6), rgba(83, 93, 100, 0.6)), url('../img/chair.jpg') center no-repeat;
+  background-size: cover;
+}
+.silkBlogMagazine .margin-r-15 {
+  margin-right: 15px;
 }
 footer {
   width: 100%;
