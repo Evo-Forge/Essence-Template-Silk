@@ -1,7 +1,4 @@
 .silkBlogMagazine {
-  .border {
-    border: 1px solid red;
-  }
   .flex {
     display: flex;
     justify-content: center;
@@ -31,6 +28,9 @@
       flex-grow: 1;
     }
   }
+  .grow {
+    flex-grow: 1;
+  }
   .bg-mountain {
     background: linear-gradient( rgba(83, 93, 100, 0.4), rgba(83, 93, 100, 0.4) ), url('../img/munte.jpg') no-repeat;
     background-size: cover;
@@ -48,6 +48,9 @@
       outline: none;
     }
   }
+  .card-h {
+    height: 402px;
+  }
   .half-w {
     width: 50%;
   }
@@ -59,7 +62,7 @@
     opacity: .5;
   }
   .bg-offroad {
-    background: url('../img/offroad.jpg') no-repeat;
+    background: url('../img/offroad.jpg') center no-repeat;
     background-size: cover;
   }
   .relative {
@@ -74,11 +77,6 @@
   }
   .padding-r-15 {
     padding-right: 15px;
-  }
-  .card-no-border {
-    .card-suplimentary-actions {
-      border-top: 0;
-    }
   }
   .card-img {
     .card-supporting-text:first-child {
@@ -97,13 +95,17 @@
   .padding-16 {
     padding: 16px;
   }
+  .duster-card {
+    ul {
+      padding: 2px 0;
+    }
+  }
   .border-b {
     border-bottom: 1px solid #eee;
   }
   .bg-style {
     background:linear-gradient( rgba(83, 93, 100, 0.6), rgba(83, 93, 100, 0.6) ),  url('../img/style.jpg') center no-repeat;
     background-size: cover;
-    height: 300px;
   }
   .e-avatar {
     width: 45px;
@@ -113,12 +115,9 @@
   .bg-trans {
     background: url('../img/transfagarasan.png') no-repeat;
     background-size: cover;
-    .card-supporting-text{
-      height: 368px;
-    }
   }
   .two-btn {
-    width: 85%;
+    width: 90%;
     border: 1px solid #eee;
     border-radius: 25px;
     button {
@@ -133,16 +132,86 @@
   .bg-culture {
     background: url('../img/culture.png') no-repeat;
     background-size: cover;
-    .card-supporting-text {
-      height: 242px;
-    }
   }
   .bg-chair {
-    background:linear-gradient( rgba(83, 93, 100, 0.6), rgba(83, 93, 100, 0.6) ),  url('../img/chair.jpg') center no-repeat;
+    background:linear-gradient( rgba(83, 93, 100, 0.4), rgba(83, 93, 100, 0.4) ),  url('../img/chair.jpg') center no-repeat;
     background-size: cover;
   }
   .margin-r-15 {
     margin-right: 15px;
   }
-
+  .margin-b-img {
+    margin-bottom: -6px;
+  }
+  .navigation-btn {
+    border: 2px solid #eee;
+    border-radius: 25px;
+    button {
+      font-size: 18px;
+      font-weight: bold;
+      border: 0;
+    }
+    button:focus {
+      outline:none;
+    }
+    button:first-child {
+      border-right: 1px solid lightgrey;
+    }
+  }
+  .card .card-header {
+    padding: 8px 16px;
+  }
+  .border-r {
+    border-right: 1px solid lightgrey;
+  }
+  .bg-nadia {
+    background: url('../img/nadia.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  .width-80 {
+    width: 80%;
+  }
+  .no-border {
+    border: 0;
+    &:hover, &:focus {
+      border: 0;
+    }
+    &.card-suplimentary-actions {
+      border-top: 0;
+    }
+  }
+  .margin-auto {
+    margin: 8px auto;
+  }
+  .circle {
+    border-radius: 50%;
+  }
+  .v-align-middle {
+    vertical-align: middle;
+  }
+  .video {
+    background-color: transparent;
+    width: 50px;
+    border: 2px solid lightgrey;
+    border-radius: 25px;
+    &:hover, &:focus {
+      background-color: transparent;
+      border: 2px solid lightgrey;
+      outline: none;
+    }
+  }
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(50%);
+    background-color: inherit;
+    z-index: 2;
+  }
+  .margin-t-8 {
+    margin-top: 8px;
+  }
+  .border {
+    border: 2px solid lightgrey;
+  }
 }
