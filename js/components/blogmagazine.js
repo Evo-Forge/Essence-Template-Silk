@@ -501,13 +501,13 @@ class SilkBlogMagazine extends React.Component {
               <Card classes={'e-background-white card-h flex'}>
                 <CardContent className={'flex'}>
                   <Block classes={'e-text-black e-background-white border flex col-direction space-between e-text-center padding-16'}>
-                    <Block className={'width-80 margin-auto'}>
+                    <Block className={'width-80 margin-8-auto'}>
                       <Text type={'p'} classes={'e-text-center e-subhead e-text-uppercase'}>Quote </Text>
                       <Icon name={"editor-format-quote"} className={"e-text-grey-600 e-text-center e-display-2 padding-16"} />
                       <Text type={'strong'} classes={'show e-text-center e-text-black e-title'}> A problem is a chance for you to do your best </Text>
                     </Block>
                     <Block>
-                      <Divider classes={'thin medium e-background-grey-300 margin-auto'} />
+                      <Divider classes={'thin medium e-background-grey-300 margin-8-auto'} />
                       <Text type={'p'} classes={'e-text-center e-subhead e-text-uppercase'}>Duke Ellington </Text>
                     </Block>
                   </Block>
@@ -535,8 +535,10 @@ class SilkBlogMagazine extends React.Component {
             <Block classes={'brick brick-6'}>
               <Card classes={'full-w e-background-white card-h'}>
                 <CardContent classes={'e-no-padding relative'}>
-                  <Btn icon={"av-play-arrow"} ripple={true} type={'default'} classes={'e-text-grey-100 e-text-uppercase video center'} />
-                  <Image src={'assets/img/motor.jpg'} classes={'e-img-rsp full-w'} />
+                  <Image src={'assets/img/motor.jpg'} classes={'e-img-rsp full-w grow'} />
+                  <Block classes={'layer flex col-direction align-center e-text-center'}>
+                    <Btn icon={"av-play-arrow"} ripple={true} type={'default'} classes={'e-text-grey-100 e-text-uppercase video center'} />
+                  </Block>
                 </CardContent>
                 <CardFooter classes={'no-border'}>
                   <Btn label={'cars & moto'} ripple={true} type={'default'} classes={'e-text-orange-A400 e-text-uppercase explore-btn orange'} />

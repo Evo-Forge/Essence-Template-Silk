@@ -24,9 +24,9 @@
     &.col-direction {
       flex-direction: column;
     }
-    &.grow {
-      flex-grow: 1;
-    }
+  }
+  .align-center {
+    align-items: center;
   }
   .grow {
     flex-grow: 1;
@@ -180,7 +180,7 @@
       border-top: 0;
     }
   }
-  .margin-auto {
+  .margin-8-auto {
     margin: 8px auto;
   }
   .circle {
@@ -200,13 +200,12 @@
       outline: none;
     }
   }
-  .center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(50%);
-    background-color: inherit;
-    z-index: 2;
+  .layer {
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
   .margin-t-8 {
     margin-top: 8px;

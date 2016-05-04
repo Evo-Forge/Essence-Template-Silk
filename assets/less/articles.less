@@ -1,3 +1,99 @@
 .silkArticles {
-
+  .flex {
+    display: flex;
+    justify-content: center;
+    &.space-between {
+      justify-content: space-between;
+    }
+    &.space-around {
+      justify-content: space-around;
+    }
+    &.start {
+      justify-content: flex-start;
+    }
+    &.top-bottom {
+      flex-wrap: wrap;
+      align-content: space-between;
+    }
+    &.end {
+      align-items: flex-end;
+    }
+    &.stretch {
+      align-items: stretch;
+    }
+    &.col-direction {
+      flex-direction: column;
+    }
+    &.justify-end {
+      justify-content: flex-end;
+    }
+  }
+  .align-center {
+    align-items: center;
+  }
+  .grow {
+    flex-grow: 1;
+  }
+  .full-w {
+    width: 100%;
+  }
+  .width-80 {
+    width: 80%;
+  }
+  .e-avatar {
+    width: 45px;
+    border-radius: 50%;
+    padding: 0 8px;
+  }
+  .bg-winter {
+    background: linear-gradient( rgba(83, 93, 100, 0.5), rgba(83, 93, 100, 0.5) ), url('../img/header-view.jpg') no-repeat;
+    background-size: cover;
+    opacity: .7;
+  }
+  .first-p::first-letter {
+      float:left;
+      font-size: 75px;
+      line-height: 60px;
+      padding-top: 3px;
+      padding-right: 15px;
+  }
+  .margin-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .e-row {
+    margin: 0 -1%;
+  }
+  .social {
+    a {
+      display: inline-block;
+      width: 70px;
+      padding: 3px 8px;
+      margin: 0 5px;
+      i {
+        padding: 0 15px 0 0;
+      }
+    }
+  }
+  a:hover {
+    cursor: pointer;
+  }
+  .width-90 {
+    width: 90%;
+  }
+  .margin-r-15 {
+    margin-right: 15px;
+  }
+  .border-i {
+    border: 1px solid lightgrey;
+  }
+  .comment-box {
+    padding: 15px 25px;
+  }
+  .btn-radius {
+    border-radius: 25px;
+    &.flat {
+      padding: 0 16px;
+    }
+  }
 }
