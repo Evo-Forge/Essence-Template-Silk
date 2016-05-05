@@ -1,3 +1,142 @@
 .silkWidgets {
-
+  .flex {
+    display: flex;
+    justify-content: center;
+    &.space-between {
+      justify-content: space-between;
+    }
+    &.space-around {
+      justify-content: space-around;
+    }
+    &.start {
+      justify-content: flex-start;
+    }
+    &.top-bottom {
+      flex-wrap: wrap;
+      align-content: space-between;
+    }
+    &.end {
+      align-items: flex-end;
+    }
+    &.stretch {
+      align-items: stretch;
+    }
+    &.col-direction {
+      flex-direction: column;
+    }
+    &.justify-end {
+      justify-content: flex-end;
+    }
+  }
+  .align-center {
+    align-items: center;
+  }
+  .grow {
+    flex-grow: 1;
+  }
+  .full-w {
+    width: 100%;
+  }
+  .width-80 {
+    width: 80%;
+  }
+  .e-avatar {
+    width: 45px;
+    border-radius: 50%;
+    padding: 0 8px;
+  }
+  .margin-r-15 {
+    margin-right: 15px;
+  }
+  .go-up {
+    transform: rotate(90deg);
+    font-size: 50px;
+    padding-top: 20px;
+  }
+  .go-down {
+    transform: rotate(-90deg);
+    font-size: 50px;
+  }
+  .card-h {
+    height: 402px;
+  }
+  .border-b {
+    border-bottom: 1px solid #eee;
+  }
+  ul.chips {
+    height: 22px;
+    line-height: 24px;
+    background: white;
+    margin: 7px 15px 7px 0;
+  }
+  ul.chips:hover {
+    background-color: #e0e0e0;
+    border: 1px solid #e0e0e0;
+  }
+  ul.chips li:hover {
+    color: black;
+  }
+  .v-align-tt {
+    vertical-align: text-top;
+  }
+  .circle {
+    border-radius: 50%;
+  }
+  .padding-16 {
+    padding: 16px;
+  }
+  a:hover {
+    cursor: pointer;
+  }
+  .border-l-r {
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+  }
+  .margin-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .padding-t-b {
+    padding: 10px 0;
+  }
+  .border-circle {
+    border: 2px solid white;
+  }
+  .margin-t-img {
+    margin-top: -80px;
+  }
+  .no-border {
+    border: 0;
+    &:hover, &:focus {
+      border: 0;
+    }
+    &.card-suplimentary-actions {
+      border-top: 0;
+    }
+  }
+  .explore-btn {
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: transparent;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    &:hover, &:focus {
+      background: inherit;
+      border: 1px solid lightgrey;
+      outline: none;
+    }
+  }
+  .v-align-tb {
+    vertical-align: text-bottom;;
+  }
+  .v-align-middle {
+    vertical-align: middle;
+  }
+ .padding-para {
+   padding: 5px 16px;
+ }
+ .v-align-bm {
+   vertical-align: -webkit-baseline-middle;
+ }
 }

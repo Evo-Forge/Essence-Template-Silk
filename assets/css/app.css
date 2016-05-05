@@ -211,6 +211,148 @@
 .silkBlogMagazine .border {
   border: 2px solid lightgrey;
 }
+.silkWidgets .flex {
+  display: flex;
+  justify-content: center;
+}
+.silkWidgets .flex.space-between {
+  justify-content: space-between;
+}
+.silkWidgets .flex.space-around {
+  justify-content: space-around;
+}
+.silkWidgets .flex.start {
+  justify-content: flex-start;
+}
+.silkWidgets .flex.top-bottom {
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.silkWidgets .flex.end {
+  align-items: flex-end;
+}
+.silkWidgets .flex.stretch {
+  align-items: stretch;
+}
+.silkWidgets .flex.col-direction {
+  flex-direction: column;
+}
+.silkWidgets .flex.justify-end {
+  justify-content: flex-end;
+}
+.silkWidgets .align-center {
+  align-items: center;
+}
+.silkWidgets .grow {
+  flex-grow: 1;
+}
+.silkWidgets .full-w {
+  width: 100%;
+}
+.silkWidgets .width-80 {
+  width: 80%;
+}
+.silkWidgets .e-avatar {
+  width: 45px;
+  border-radius: 50%;
+  padding: 0 8px;
+}
+.silkWidgets .margin-r-15 {
+  margin-right: 15px;
+}
+.silkWidgets .go-up {
+  transform: rotate(90deg);
+  font-size: 50px;
+  padding-top: 20px;
+}
+.silkWidgets .go-down {
+  transform: rotate(-90deg);
+  font-size: 50px;
+}
+.silkWidgets .card-h {
+  height: 402px;
+}
+.silkWidgets .border-b {
+  border-bottom: 1px solid #eee;
+}
+.silkWidgets ul.chips {
+  height: 22px;
+  line-height: 24px;
+  background: white;
+  margin: 7px 15px 7px 0;
+}
+.silkWidgets ul.chips:hover {
+  background-color: #e0e0e0;
+  border: 1px solid #e0e0e0;
+}
+.silkWidgets ul.chips li:hover {
+  color: black;
+}
+.silkWidgets .v-align-tt {
+  vertical-align: text-top;
+}
+.silkWidgets .circle {
+  border-radius: 50%;
+}
+.silkWidgets .padding-16 {
+  padding: 16px;
+}
+.silkWidgets a:hover {
+  cursor: pointer;
+}
+.silkWidgets .border-l-r {
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+}
+.silkWidgets .margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.silkWidgets .padding-t-b {
+  padding: 10px 0;
+}
+.silkWidgets .border-circle {
+  border: 2px solid white;
+}
+.silkWidgets .margin-t-img {
+  margin-top: -80px;
+}
+.silkWidgets .no-border {
+  border: 0;
+}
+.silkWidgets .no-border:hover,
+.silkWidgets .no-border:focus {
+  border: 0;
+}
+.silkWidgets .no-border.card-suplimentary-actions {
+  border-top: 0;
+}
+.silkWidgets .explore-btn {
+  font-size: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: transparent;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+}
+.silkWidgets .explore-btn:hover,
+.silkWidgets .explore-btn:focus {
+  background: inherit;
+  border: 1px solid lightgrey;
+  outline: none;
+}
+.silkWidgets .v-align-tb {
+  vertical-align: text-bottom;
+}
+.silkWidgets .v-align-middle {
+  vertical-align: middle;
+}
+.silkWidgets .padding-para {
+  padding: 5px 16px;
+}
+.silkWidgets .v-align-bm {
+  vertical-align: -webkit-baseline-middle;
+}
 .silkArticles .flex {
   display: flex;
   justify-content: center;
@@ -258,7 +400,7 @@
   padding: 0 8px;
 }
 .silkArticles .bg-winter {
-  background: linear-gradient(rgba(83, 93, 100, 0.4), rgba(83, 93, 100, 0.4)), url('../img/header-view.jpg') no-repeat;
+  background: linear-gradient(rgba(83, 93, 100, 0.5), rgba(83, 93, 100, 0.5)), url('../img/header-view.jpg') no-repeat;
   background-size: cover;
   opacity: .7;
 }
