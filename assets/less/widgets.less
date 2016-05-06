@@ -40,6 +40,9 @@
   .width-80 {
     width: 80%;
   }
+  .half-w {
+    width: 50%;
+  }
   .e-avatar {
     width: 45px;
     border-radius: 50%;
@@ -133,10 +136,85 @@
   .v-align-middle {
     vertical-align: middle;
   }
- .padding-para {
+  .padding-para {
    padding: 5px 16px;
- }
- .v-align-bm {
+  }
+  .v-align-bm {
    vertical-align: -webkit-baseline-middle;
  }
+  .margin-t-9 {
+    margin-top: 9px;
+  }
+  .navigation-btn {
+    border: 2px solid #eee;
+    border-radius: 25px;
+    height: 24px;
+    button {
+      height: 24px;
+      font-size: 20px;
+      font-weight: bold;
+      border: 0;
+      padding: 1px 0;
+    }
+    button:focus {
+      outline:none;
+    }
+    button:first-child {
+      border-right: 1px solid lightgrey;
+    }
+  }
+  .card-h-padding {
+    &.card-header {
+      padding: 14px 16px;
+    }
+  }
+  .border-r {
+    border-right: 1px solid lightgrey;
+  }
+  .badge {
+    display: inline-block;
+    min-width: 30px;
+    margin-left: 10px;
+    border-radius: 25px;;
+  }
+  .download-btn {
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    &.flat {
+      min-width: 25px;
+      min-height: 24px;
+      line-height: 24px;
+    }
+    &.flat:focus {
+      border: 1px solid lightgrey;
+      outline: none;
+    }
+  }
+  .percent-in {
+    margin-top: -80px;
+  }
+  .relative {
+    position: relative;
+  }
+  .layer {
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .margin-b-neg {
+    margin-bottom: -35px;
+  }
+  .bg-twitter {
+    background: linear-gradient( rgba(46, 153, 234, 0.8), rgba(46, 153, 234, 0.9) ), url('../img/twitter.png') no-repeat;
+    background-position: 90% 160%;
+  }
+  .bg-facebook {
+    background: linear-gradient( rgba(57, 73, 171, 0.9), rgba(57, 73, 171, 0.9) ), url('../img/facebook.png') no-repeat;
+    background-position: 120% 160%;
+  }
+  .margin-b-untold {
+    margin-bottom: -7px;
+  }
 }

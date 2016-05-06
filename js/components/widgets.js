@@ -3,7 +3,10 @@ import ClassNames from 'classnames';
 
 import { Block, Btn,
          Card, CardHeader, CardContent, CardFooter, Chip,
+         Divider,
          Icon, Image,
+         List, ListItem,
+         Progress,
          Text,
        } from 'react-essence';
 
@@ -187,12 +190,52 @@ class SilkWidgets extends React.Component {
 
             <Block classes={'brick brick-3'}>
               <Card classes={'e-background-white card-h'}>
-                <CardHeader>
+                <CardHeader classes={'border-b'}>
+                  <Block classes={'flex space-between'}>
+                    <Text type={'strong'} classes={'e-text-center e-body2 e-no-margin e-text-black e-text-uppercase v-align-tt'}> instagram</Text>
+                    <Btn label={'follow'} ripple={true} type={'default'} classes={'e-text-uppercase explore-btn'} />
+                  </Block>
                 </CardHeader>
                 <CardContent>
+                  <Block classes={'e-row'}>
+                    <Block classes={'brick brick-4'}>
+                      <Image src={'assets/img/balea.png'} height={'65px'} classes={'e-img-rsp full-w'}/>
+                    </Block>
+                    <Block classes={'brick brick-4'}>
+                      <Image src={'assets/img/biserici.jpg'} height={'65px'} classes={'e-img-rsp full-w'}/>
+                    </Block>
+                    <Block classes={'brick brick-4'}>
+                      <Image src={'assets/img/castel1.png'} height={'65px'} classes={'e-img-rsp full-w'}/>
+                    </Block>
+                    <Block classes={'brick brick-4'}>
+                      <Image src={'assets/img/header-view.jpg'} height={'65px'} classes={'e-img-rsp full-w'}/>
+                    </Block>
+                    <Block classes={'brick brick-4'}>
+                      <Image src={'assets/img/munte.jpg'} height={'65px'} classes={'e-img-rsp full-w'}/>
+                    </Block>
+                    <Block classes={'brick brick-4'}>
+                      <Image src={'assets/img/peles.png'} height={'65px'} classes={'e-img-rsp full-w'}/>
+                    </Block>
+                    <Block classes={'brick brick-4'}>
+                      <Image src={'assets/img/road.png'} height={'65px'} classes={'e-img-rsp full-w'}/>
+                    </Block>
+                    <Block classes={'brick brick-4'}>
+                      <Image src={'assets/img/cetate.png'} height={'65px'} classes={'e-img-rsp full-w'}/>
+                    </Block>
+                    <Block classes={'brick brick-4'}>
+                      <Image src={'assets/img/motor.jpg'} height={'65px'} classes={'e-img-rsp full-w'}/>
+                    </Block>
+                    <Block classes={'brick brick-4'}>
+                      <Image src={'assets/img/romania4.png'} height={'65px'} classes={'e-img-rsp full-w'}/>
+                    </Block>
+                    <Block classes={'brick brick-4'}>
+                      <Image src={'assets/img/romania2.png'} height={'65px'} classes={'e-img-rsp full-w'}/>
+                    </Block>
+                    <Block classes={'brick brick-4'}>
+                      <Image src={'assets/img/romania3.png'} height={'65px'} classes={'e-img-rsp full-w'}/>
+                    </Block>
+                  </Block>
                 </CardContent>
-                <CardFooter classes={'e-background-grey-100'}>
-                </CardFooter>
               </Card>
             </Block>
 
@@ -268,9 +311,9 @@ class SilkWidgets extends React.Component {
           </Block>
 
           <Block classes={'e-row'}>
-            <Block classes={'brick brick-3'}>
-              <Card classes={'e-background-white'}>
-                <CardContent classes={'e-background-purple-400 e-text-center'}>
+            <Block classes={'brick brick-3 flex'}>
+              <Card classes={'e-background-white grow flex col-direction'}>
+                <CardContent classes={'e-background-purple-400 e-text-center grow'}>
                   <Text type={'strong'} classes={'e-title e-text-white'}> Silk UI Kit </Text>
                   <Text type={'small'} classes={'e-text-grey-300 e-body1 show'}> Demo version </Text>
                   <Text type={'p'} classes={'e-text-center e-body1 e-text-grey-200'}> ZIP 93Mb </Text>
@@ -283,27 +326,259 @@ class SilkWidgets extends React.Component {
                 </CardFooter>
               </Card>
             </Block>
+
             <Block classes={'brick brick-3'}>
               <Card classes={'e-background-red-400'}>
                 <CardHeader className={'border-b'}>
                   <Block classes={'flex space-between'}>
-                    <Text type={'strong'} classes={'e-text-left e-body2 e-no-margin e-text-grey-200 e-text-uppercase'}> Sighisoara </Text>
+                    <Text type={'strong'} classes={'e-text-left e-body2 e-no-margin e-text-grey-200 e-text-uppercase'}> Viena </Text>
                     <Icon name={"device-brightness-high"} className={"e-text-right e-text-grey-200 v-align-middle"} />
                   </Block>
                 </CardHeader>
-                <CardContent classes={'e-text-center'}>
+                <CardContent classes={'e-text-center flex'}>
                   <Image src={'assets/img/cloudy.png'} height={'50px'} classes={'e-text-white margin-r-15'} />
-                  <Text type={'span'} classes={'e-text-center e-display-1 e-text-white'}>21</Text>
-                  <Text type={'span'} classes={'e-text-center e-display-1 e-text-white'}> &deg;</Text>
-                  <Text type={'sup'} classes={'e-text-center e-display-1 e-text-white v-align-bm'}>c </Text>
+                  <Block className={'margin-t-9'}>
+                    <Text type={'span'} classes={'e-text-center e-display-1 e-text-white'}>21</Text>
+                    <Text type={'span'} classes={'e-text-center e-display-1 e-text-white'}> &deg;</Text>
+                    <Text type={'sup'} classes={'e-text-center e-display-1 e-text-white v-align-bm'}>c </Text>
+                  </Block>
                 </CardContent>
                 <CardFooter classes={'e-text-left e-background-white e-no-padding'}>
                   <Text type={'strong'} classes={'e-body2 e-text-grey-600 e-text-uppercase show padding-para'}> august 23, monday </Text>
                 </CardFooter>
               </Card>
             </Block>
-            <Block classes={'brick brick-3'}>brick-6</Block>
+
+            <Block classes={'brick brick-6 flex'}>
+              <Card classes={'e-background-white grow flex col-direction'}>
+                <CardHeader className={'border-b card-h-padding'}>
+                  <Block classes={'flex space-between'}>
+                    <Text type={'strong'} classes={'e-text-left e-body2 e-no-margin e-text-black e-text-uppercase'}> Viena </Text>
+                    <Block classes={'navigation-btn'}>
+                      <Btn icon={"hardware-keyboard-arrow-left"} ripple={false} type={'default'} classes={'e-text-grey-900 e-no-margin e-background-white'} />
+                      <Btn icon={"hardware-keyboard-arrow-right"} ripple={false} type={'default'} classes={'e-text-grey-900 e-no-margin e-background-white'} />
+                    </Block>
+                  </Block>
+                </CardHeader>
+                <CardContent classes={'e-no-padding flex space-between grow'}>
+                  <Block classes={'half-w e-no-margin border-r grow'}>
+                    <Block classes={'e-background-grey-100 e-text-center'}>
+                      <Text type={'strong'} classes={'e-body2 e-text-grey-600 e-text-uppercase show padding-para'}> august 23, monday </Text>
+                    </Block>
+                    <Block classes={'flex e-margin-top-15'}>
+                      <Image src={'assets/img/weather-icon.png'} height={'50px'} classes={'e-text-white margin-r-15'} />
+                      <Block className={'margin-t-9'}>
+                        <Text type={'span'} classes={'e-text-center e-display-1 e-text-black'}>21</Text>
+                        <Text type={'span'} classes={'e-text-center e-display-1 e-text-grey-600'}> &deg;</Text>
+                        <Text type={'sup'} classes={'e-text-center e-display-1 e-text-grey-600 v-align-bm'}>c </Text>
+                      </Block>
+                    </Block>
+                  </Block>
+
+                  <Block classes={'brick-2 e-no-margin border-r grow'}>
+                    <Block classes={'e-background-grey-100 e-text-center'}>
+                      <Text type={'strong'} classes={'e-body2 e-text-grey-600 e-text-uppercase show padding-para'}> tue </Text>
+                    </Block>
+                    <Block className={'e-text-center'}>
+                      <Block className={'e-margin-top-15'}>
+                        <Image src={'assets/img/weather-icon.png'} height={'25px'} classes={'e-text-white'} />
+                      </Block>
+                      <Block className={'e-margin-bottom-15'}>
+                        <Text type={'span'} classes={'e-text-center e-body1 e-text-black'}>23</Text>
+                        <Text type={'span'} classes={'e-text-center e-body1 e-text-grey-600'}> &deg;</Text>
+                      </Block>
+                    </Block>
+                  </Block>
+
+                  <Block classes={'brick-2 e-no-margin border-r grow'}>
+                    <Block classes={'e-background-grey-100 e-text-center'}>
+                      <Text type={'strong'} classes={'e-body2 e-text-grey-600 e-text-uppercase show padding-para'}> wed </Text>
+                    </Block>
+                    <Block className={'e-text-center'}>
+                      <Block className={'e-margin-top-15'}>
+                        <Image src={'assets/img/weather-icon.png'} height={'25px'} classes={'e-text-white'} />
+                      </Block>
+                      <Block className={'e-margin-bottom-15'}>
+                        <Text type={'span'} classes={'e-text-center e-body1 e-text-black'}>21</Text>
+                        <Text type={'span'} classes={'e-text-center e-body1 e-text-grey-600'}> &deg;</Text>
+                      </Block>
+                    </Block>
+                  </Block>
+
+                  <Block classes={'brick-2 e-no-margin grow'}>
+                    <Block classes={'e-background-grey-100 e-text-center'}>
+                      <Text type={'strong'} classes={'e-body2 e-text-grey-600 e-text-uppercase show padding-para'}> thu </Text>
+                    </Block>
+                    <Block className={'e-text-center'}>
+                      <Block className={'e-margin-top-15'}>
+                        <Image src={'assets/img/weather-icon.png'} height={'25px'} classes={'e-text-white'} />
+                      </Block>
+                      <Block className={'e-margin-bottom-15'}>
+                        <Text type={'span'} classes={'e-text-center e-body1 e-text-black'}>24</Text>
+                        <Text type={'span'} classes={'e-text-center e-body1 e-text-grey-600'}> &deg;</Text>
+                      </Block>
+                    </Block>
+                  </Block>
+                </CardContent>
+              </Card>
+            </Block>
           </Block>
+
+          <Block classes={'e-row'}>
+            <Block classes={'brick brick-6'}>
+              <Card classes={'e-background-white card-h flex col-direction'}>
+                <CardHeader classes={'border-b'}>
+                  <Text type={'strong'} classes={'e-body2 e-text-uppercase'}> downloads</Text>
+                  <Text type={'span'} classes={'e-text-center e-body1 e-background-green-700 e-text-white badge'}> 4 </Text>
+                </CardHeader>
+                <CardContent classes={'e-no-padding grow'}>
+                  <List type={'navigation'}>
+                    <ListItem classes={'padding-para border-b'}>
+                      <Text type={'a'} classes={'e-text-center e-body1'}>
+                        <Image src={'assets/img/zip.png'} height={'40px'} alt={'zip file'} classes={'e-left'}/>
+                        <Block classes={'content e-left'}>
+                          <Text type={'strong'} classes={'e-text-center e-body1'}> Silk-UI-Kit.zip </Text>
+                          <Text type={'small'} classes={'e-text-center e-body1'}> 3Mb </Text>
+                        </Block>
+                        <Btn icon={"file-file-download"} ripple={false} className={'flat e-background-white download-btn e-right'} />
+                      </Text>
+                    </ListItem>
+                    <ListItem classes={'padding-para border-b'}>
+                      <Text type={'a'} classes={'e-text-center e-body1'}>
+                        <Image src={'assets/img/pdf.png'} height={'40px'} alt={'pdf file'} classes={'e-left'}/>
+                        <Block classes={'content e-left'}>
+                          <Text type={'strong'} classes={'e-text-center e-body1'}> Silk-UI-Kit.pdf </Text>
+                          <Text type={'small'} classes={'e-text-center e-body1'}> 8Mb </Text>
+                        </Block>
+                        <Btn icon={"file-file-download"} ripple={false} className={'flat e-background-white download-btn e-right'} />
+                      </Text>
+                    </ListItem>
+                    <ListItem classes={'padding-para border-b'}>
+                      <Text type={'a'} classes={'e-text-center e-body1'}>
+                        <Image src={'assets/img/psd.png'} height={'40px'} alt={'psd file'} classes={'e-left'}/>
+                        <Block classes={'content e-left'}>
+                          <Text type={'strong'} classes={'e-text-center e-body1'}> Silk-UI-Kit.psd </Text>
+                          <Text type={'small'} classes={'e-text-center e-body1'}> 3Mb </Text>
+                        </Block>
+                        <Btn icon={"file-file-download"} ripple={false} className={'flat e-background-white download-btn e-right'} />
+                      </Text>
+                    </ListItem>
+                    <ListItem classes={'padding-para border-b'}>
+                      <Text type={'a'} classes={'e-text-center e-body1'}>
+                        <Image src={'assets/img/ai.png'} height={'40px'} alt={'ai file'} classes={'e-left'}/>
+                        <Block classes={'content e-left'}>
+                          <Text type={'strong'} classes={'e-text-center e-body1'}> Silk-UI-Kit.ai </Text>
+                          <Text type={'small'} classes={'e-text-center e-body1'}> 5Mb </Text>
+                        </Block>
+                        <Btn icon={"file-file-download"} ripple={false} className={'flat e-background-white download-btn e-right'} />
+                      </Text>
+                    </ListItem>
+                  </List>
+                </CardContent>
+                <CardFooter classes={'e-background-grey-100 e-text-center'}>
+                  <Text type={'strong'} classes={'e-body2 e-text-black e-text-uppercase'}> download all </Text>
+                </CardFooter>
+              </Card>
+            </Block>
+
+            <Block classes={'brick brick-3'}>
+              <Card classes={'e-background-white flex col-direction card-h'}>
+                <CardContent classes={'flex col-direction e-text-center grow'}>
+                  <Chip data={ChipVideo}/>
+                  <Block className={'e-margin-top-25'}>
+                    <Image src={'assets/img/video.png'} alt={'video'} height={'150px'} />
+                  </Block>
+                  <Text type={'h3'} classes={'e-text-center e-title e-padding-top-15'}>How to Trim Out </Text>
+                  <Text type={'p'} classes={'e-text-center e-body1 e-text-grey-600 e-padding-top-15'}> I whipped</Text>
+                </CardContent>
+                <CardFooter classes={'e-background-grey-100 e-text-center'}>
+                  <Text type={'strong'} classes={'e-body2 e-text-black e-text-uppercase'}> Watch video </Text>
+                </CardFooter>
+              </Card>
+            </Block>
+
+            <Block classes={'brick brick-3'}>
+              <Card classes={'e-background-white flex col-direction card-h'}>
+                <CardContent classes={'flex col-direction e-text-center grow'}>
+                  <Chip data={ChipPhoto}/>
+                  <Block className={'e-margin-top-25'}>
+                    <Image src={'assets/img/album.png'} alt={'photo album'} height={'150px'} />
+                  </Block>
+                  <Text type={'h3'} classes={'e-text-center e-title e-padding-top-15'}>How to Trim Out </Text>
+                  <Text type={'p'} classes={'e-text-center e-body1 e-text-grey-600 e-padding-top-15'}> I whipped</Text>
+                </CardContent>
+                <CardFooter classes={'e-background-grey-100 e-text-center'}>
+                  <Text type={'strong'} classes={'e-body2 e-text-black e-text-uppercase'}> Watch gallery </Text>
+                </CardFooter>
+              </Card>
+            </Block>
+          </Block>
+
+          <Block classes={'e-row'}>
+            <Block classes={'brick brick-3 flex col-direction'}>
+              <Card classes={'e-background-white flex col-direction grow'}>
+                <CardContent classes={'bg-twitter grow flex col-direction space-between'}>
+                  <Block>
+                    <Text type={'p'} classes={'e-text-left e-title e-text-white e-margin-top-15'}>
+                      <Text type={'strong'} classes={'e-text-center e-text-white'}>
+                        <i className={'fa fa-twitter e-text-white margin-r-15'}></i>
+                        Lorem ipsum
+                      </Text>
+                    </Text>
+                    <Text type={'p'} classes={'e-text-left e-body1 e-text-grey-100 e-margin-top-15'}>
+                      Lorem ipsum dolor sit amet, homero voluptatibus comprehensam et sea, an sonet lucilius pri.
+                    </Text>
+                  </Block>
+                  <Text type={'p'} classes={'e-text-left e-body1 e-text-grey-200 e-margin-top-15'}>3 hours ago </Text>
+                </CardContent>
+              </Card>
+
+              <Card classes={'e-background-white flex col-direction grow'}>
+                <CardContent classes={'bg-facebook grow flex col-direction space-between'}>
+                  <Block>
+                    <Text type={'p'} classes={'e-text-left e-title e-text-white'}>
+                      <Text type={'strong'} classes={'e-text-center e-text-white'}>
+                        <i className={'fa fa-twitter e-text-white margin-r-15'}></i>
+                        Lorem ipsum
+                      </Text>
+                    </Text>
+                    <Text type={'p'} classes={'e-text-left e-body1 e-text-grey-100 e-margin-top-15'}>
+                      Lorem ipsum dolor sit amet, homero voluptatibus comprehensam et sea, an sonet lucilius pri.Discere deserunt splendide ei eam.
+                    </Text>
+                  </Block>
+                  <Text type={'p'} classes={'e-text-left e-body1 e-text-grey-200 e-margin-top-15'}>3 hours ago </Text>
+                </CardContent>
+              </Card>
+            </Block>
+            <Block classes={'brick brick-3'}>
+              <Card classes={'card-h e-background-white flex col-direction'}>
+                <CardHeader className={'e-text-center'}>
+                  <Text type={'strong'} classes={'e-body2 e-text-black e-text-uppercase'}>progress </Text>
+                  <Icon name={"device-brightness-high"} className={"e-text-right e-text-blasck v-align-middle e-right"} />
+                </CardHeader>
+                <CardContent classes={'grow e-margin-top-50'}>
+                  <Progress type={'circle'} />
+                  <Block className={'percent-in'}>
+                    <Text type={'h3'} classes={'e-text-center e-display-2 e-text-black e-no-margin '}> 75 </Text>
+                    <Text type={'p'} classes={'e-text-center e-body1 e-text-grey-600'}> percent </Text>
+                  </Block>
+                </CardContent>
+                <CardFooter classes={'e-text-center e-background-grey-100'}>
+                  <Text type={'strong'} classes={'e-body2 e-text-black e-text-uppercase'}>more details </Text>
+                </CardFooter>
+              </Card>
+            </Block>
+            <Block classes={'brick brick-6'}>
+              <Card>
+                <CardContent classes={'e-no-padding'}>
+                  <Block>
+                    <Image src={'assets/img/untold.png'} classes={'e-img-rsp full-w margin-b-untold'} />
+                  </Block>
+                </CardContent>
+              </Card>
+            </Block>
+          </Block>
+
         </Block>
       </Block>
     );

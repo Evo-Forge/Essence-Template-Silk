@@ -142,11 +142,14 @@
 .silkBlogMagazine .navigation-btn {
   border: 2px solid #eee;
   border-radius: 25px;
+  height: 24px;
 }
 .silkBlogMagazine .navigation-btn button {
-  font-size: 18px;
+  height: 24px;
+  font-size: 20px;
   font-weight: bold;
   border: 0;
+  padding: 1px 0;
 }
 .silkBlogMagazine .navigation-btn button:focus {
   outline: none;
@@ -252,6 +255,9 @@
 .silkWidgets .width-80 {
   width: 80%;
 }
+.silkWidgets .half-w {
+  width: 50%;
+}
 .silkWidgets .e-avatar {
   width: 45px;
   border-radius: 50%;
@@ -352,6 +358,79 @@
 }
 .silkWidgets .v-align-bm {
   vertical-align: -webkit-baseline-middle;
+}
+.silkWidgets .margin-t-9 {
+  margin-top: 9px;
+}
+.silkWidgets .navigation-btn {
+  border: 2px solid #eee;
+  border-radius: 25px;
+  height: 24px;
+}
+.silkWidgets .navigation-btn button {
+  height: 24px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 0;
+  padding: 1px 0;
+}
+.silkWidgets .navigation-btn button:focus {
+  outline: none;
+}
+.silkWidgets .navigation-btn button:first-child {
+  border-right: 1px solid lightgrey;
+}
+.silkWidgets .card-h-padding.card-header {
+  padding: 14px 16px;
+}
+.silkWidgets .border-r {
+  border-right: 1px solid lightgrey;
+}
+.silkWidgets .badge {
+  display: inline-block;
+  min-width: 30px;
+  margin-left: 10px;
+  border-radius: 25px;
+}
+.silkWidgets .download-btn {
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+}
+.silkWidgets .download-btn.flat {
+  min-width: 25px;
+  min-height: 24px;
+  line-height: 24px;
+}
+.silkWidgets .download-btn.flat:focus {
+  border: 1px solid lightgrey;
+  outline: none;
+}
+.silkWidgets .percent-in {
+  margin-top: -80px;
+}
+.silkWidgets .relative {
+  position: relative;
+}
+.silkWidgets .layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.silkWidgets .margin-b-neg {
+  margin-bottom: -35px;
+}
+.silkWidgets .bg-twitter {
+  background: linear-gradient(rgba(46, 153, 234, 0.8), rgba(46, 153, 234, 0.9)), url('../img/twitter.png') no-repeat;
+  background-position: 90% 160%;
+}
+.silkWidgets .bg-facebook {
+  background: linear-gradient(rgba(57, 73, 171, 0.9), rgba(57, 73, 171, 0.9)), url('../img/facebook.png') no-repeat;
+  background-position: 120% 160%;
+}
+.silkWidgets .margin-b-untold {
+  margin-bottom: -7px;
 }
 .silkArticles .flex {
   display: flex;
