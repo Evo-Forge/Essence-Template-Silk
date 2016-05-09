@@ -1,3 +1,91 @@
 .silkCommerce {
-
+  .flex {
+    display: flex;
+    justify-content: center;
+    &.space-between {
+      justify-content: space-between;
+    }
+    &.space-around {
+      justify-content: space-around;
+    }
+    &.start {
+      justify-content: flex-start;
+    }
+    &.top-bottom {
+      flex-wrap: wrap;
+      align-content: space-between;
+    }
+    &.end {
+      align-items: flex-end;
+    }
+    &.stretch {
+      align-items: stretch;
+    }
+    &.col-direction {
+      flex-direction: column;
+    }
+    &.justify-end {
+      justify-content: flex-end;
+    }
+  }
+  .align-center {
+    align-items: center;
+  }
+  .grow {
+    flex-grow: 1;
+  }
+  .bg-boots {
+    background: linear-gradient( rgba(83, 93, 100, 0.4), rgba(83, 93, 100, 0.4) ), url('../img/boots.jpg') center no-repeat;
+    background-size: cover;
+  }
+  .explore-btn {
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: transparent;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    &:hover, &:focus {
+      background: inherit;
+      border: 1px solid lightgrey;
+      outline: none;
+    }
+  }
+  .card-h {
+    height: 402px;
+  }
+  .half-w {
+    width: 50%;
+  }
+  .full-w {
+    width: 100%;
+  }
+  .padding-16 {
+    padding: 16px;
+  }
+  .style-i-off {
+    font-size: 10px;
+    opacity: .5;
+  }
+  .v-align {
+    vertical-align: top;
+  }
+  a:hover {
+    cursor: pointer;
+  }
+  .border-b {
+    border-bottom: 1px solid #eee;
+  }
+  .padding-list {
+    padding: 8px 16px;
+  }
+  .sizes {
+    display: inline-block;
+    width: 20%;
+    box-sizing: border-box;
+  }
+  .border-l-r {
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+  }
 }

@@ -569,10 +569,65 @@ class SilkWidgets extends React.Component {
               </Card>
             </Block>
             <Block classes={'brick brick-6'}>
-              <Card>
-                <CardContent classes={'e-no-padding'}>
-                  <Block>
-                    <Image src={'assets/img/untold.png'} classes={'e-img-rsp full-w margin-b-untold'} />
+              <Card classes={'card-h e-background-white'}>
+                <CardContent classes={'e-no-padding card-h flex'}>
+                  <Block classes={'brick-5 e-no-margin grow'}>
+                    <Image src={'assets/img/untold.png'} classes={'e-img-rsp full-w  card-h margin-b-untold'} />
+                  </Block>
+                  <Block classes={'brick-7 e-no-margin grow flex col-direction space-between'}>
+                    <Block classes={'flex col-direction grow'}>
+                      <Block classes={'flex space-between padding-16'}>
+                        <Text type={'h3'} classes={'e-text-left e-text-black e-display-1'}>Untold</Text>
+                        <Block classes={'e-background-blue-600 circle padding-10'}>
+                          <Text type={'h3'} classes={'e-text-center e-text-white -display-1'}>26 </Text>
+                          <Text type={'p'} classes={'e-text-center e-text-white e-body1 margin-t-neg-10'}>august </Text>
+                        </Block>
+                      </Block>
+                      <Block classes={'e-text-left padding-16'}>
+                        <Text type={'strong'} classes={'e-text-left'}>
+                          <Icon name={"communication-location-on"} className={"e-text-black"} />
+                          Transilvania
+                        </Text>
+                        <Text type={'p'} classes={'e-text-left e-text-grey-600 e-body1 margin-l-25'}>Cluj Napoca, Romania </Text>
+                      </Block>
+                    </Block>
+                    <Block>
+                      <Block classes={'e-background-grey-100 padding-16 flex'}>
+                        <Block classes={'padding-10'}>
+                          <Text type={'small'} classes={'e-text-left e-text-grey-600 e-body1 e-text-uppercase'}> Days </Text>
+                          <Text type={'p'} classes={'e-text-center e-headline'}>
+                            <Text type={'strong'} classes={'e-text-center e-headline'}>12
+                              <Text type={'strong'} classes={'e-text-center e-headline amr-look'}> &#8226;</Text>
+                            </Text>
+                          </Text>
+                        </Block>
+                        <Block classes={'padding-10'}>
+                          <Text type={'small'} classes={'e-text-left e-text-grey-600 e-body1 e-text-uppercase'}> Hours </Text>
+                          <Text type={'p'} classes={'e-text-center e-headline'}>
+                            <Text type={'strong'} classes={'e-text-center e-headline'}>09
+                              <Text type={'strong'} classes={'e-text-center e-headline amr-look'}> &#8226;</Text>
+                            </Text>
+                          </Text>
+                        </Block>
+                        <Block classes={'padding-10'}>
+                          <Text type={'small'} classes={'e-text-left e-text-grey-600 e-body1 e-text-uppercase'}> Mins </Text>
+                          <Text type={'p'} classes={'e-text-center e-headline'}>
+                            <Text type={'strong'} classes={'e-text-center e-headline'}>47
+                              <Text type={'strong'} classes={'e-text-center e-headline amr-look'}> &#8226;</Text>
+                            </Text>
+                          </Text>
+                        </Block>
+                        <Block classes={'padding-10'}>
+                          <Text type={'small'} classes={'e-text-left e-text-grey-600 e-body1 e-text-uppercase'}> Sec </Text>
+                          <Text type={'p'} classes={'e-text-center e-headline'}>
+                            <Text type={'strong'} classes={'e-text-center e-headline'}>58</Text>
+                          </Text>
+                        </Block>
+                      </Block>
+                      <Block classes={'e-text-center e-background-grey-900 card-suplimentary-actions'}>
+                        <Text type={'strong'} classes={'e-body2 e-text-grey-100 e-text-uppercase'}> purchase tickets</Text>
+                      </Block>
+                    </Block>
                   </Block>
                 </CardContent>
               </Card>

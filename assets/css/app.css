@@ -214,6 +214,96 @@
 .silkBlogMagazine .border {
   border: 2px solid lightgrey;
 }
+.silkCommerce .flex {
+  display: flex;
+  justify-content: center;
+}
+.silkCommerce .flex.space-between {
+  justify-content: space-between;
+}
+.silkCommerce .flex.space-around {
+  justify-content: space-around;
+}
+.silkCommerce .flex.start {
+  justify-content: flex-start;
+}
+.silkCommerce .flex.top-bottom {
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.silkCommerce .flex.end {
+  align-items: flex-end;
+}
+.silkCommerce .flex.stretch {
+  align-items: stretch;
+}
+.silkCommerce .flex.col-direction {
+  flex-direction: column;
+}
+.silkCommerce .flex.justify-end {
+  justify-content: flex-end;
+}
+.silkCommerce .align-center {
+  align-items: center;
+}
+.silkCommerce .grow {
+  flex-grow: 1;
+}
+.silkCommerce .bg-boots {
+  background: linear-gradient(rgba(83, 93, 100, 0.4), rgba(83, 93, 100, 0.4)), url('../img/boots.jpg') center no-repeat;
+  background-size: cover;
+}
+.silkCommerce .explore-btn {
+  font-size: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: transparent;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+}
+.silkCommerce .explore-btn:hover,
+.silkCommerce .explore-btn:focus {
+  background: inherit;
+  border: 1px solid lightgrey;
+  outline: none;
+}
+.silkCommerce .card-h {
+  height: 402px;
+}
+.silkCommerce .half-w {
+  width: 50%;
+}
+.silkCommerce .full-w {
+  width: 100%;
+}
+.silkCommerce .padding-16 {
+  padding: 16px;
+}
+.silkCommerce .style-i-off {
+  font-size: 10px;
+  opacity: .5;
+}
+.silkCommerce .v-align {
+  vertical-align: top;
+}
+.silkCommerce a:hover {
+  cursor: pointer;
+}
+.silkCommerce .border-b {
+  border-bottom: 1px solid #eee;
+}
+.silkCommerce .padding-list {
+  padding: 8px 16px;
+}
+.silkCommerce .sizes {
+  display: inline-block;
+  width: 20%;
+  box-sizing: border-box;
+}
+.silkCommerce .border-l-r {
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+}
 .silkWidgets .flex {
   display: flex;
   justify-content: center;
@@ -431,6 +521,19 @@
 }
 .silkWidgets .margin-b-untold {
   margin-bottom: -7px;
+}
+.silkWidgets .padding-10 {
+  padding: 10px;
+}
+.silkWidgets .margin-t-neg-10 {
+  margin-top: -10px !important;
+}
+.silkWidgets .margin-l-25 {
+  margin-left: 25px!important;
+}
+.silkWidgets .amr-look {
+  display: inline-block;
+  padding-left: 15px;
 }
 .silkArticles .flex {
   display: flex;
