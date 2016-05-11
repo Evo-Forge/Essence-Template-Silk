@@ -3,15 +3,30 @@ import ClassNames from 'classnames';
 
 import { Block,
         Btn,
-        Card, CardHeader, CardContent, CardFooter,
+        Card, CardHeader, CardContent, CardFooter, Chip,
         Divider,
         Icon,
         Image,
         List, ListItem,
         Menu,
         Slider,
-        Text, } from 'react-essence';
+        Text } from 'react-essence';
 
+var ChipNew = {
+  name: 'ChipNew',
+  text: [<span className={'e-text-white'}>new</span>],
+  deletable: false,
+}
+var ChipExclusive = {
+  name: 'ChipExclusive',
+  text: [<span className={'e-text-white'}>exclusive</span>],
+  deletable: false,
+}
+var ChipExclusiveBlack = {
+  name: 'ChipExclusiveBlack',
+  text: [<span className={'e-text-white'}>exclusive</span>],
+  deletable: false,
+}
 class SilkCommerce extends React.Component {
 
   render() {
@@ -333,9 +348,9 @@ class SilkCommerce extends React.Component {
                   <Block classes={'padding-16 border-r e-text-center grow'}>
                     <Text type={'span'} classes={'e-text-center e-body1 e-text-grey-600 margin-r-15'}> Sort By: </Text>
                     <Menu type={'cover'} placeholder={'Price:Low-High'} classes={'e-background-grey-900 e-text-white padding-menu menu-look'}>
-                      <Text className={'e-text-black'}>Profile</Text>
-                      <Text className={'e-text-black'}>Settings</Text>
-                      <Text className={'e-text-black'}>Logout</Text>
+                      <Text className={'e-text-black'}>Price:Best Sells</Text>
+                      <Text className={'e-text-black'}>Price:Discount</Text>
+                      <Text className={'e-text-black'}>Price:High-Low</Text>
                     </Menu>
                   </Block>
                   <Block classes={'padding-list border-r e-text-center grow line-h-3'}>
@@ -390,10 +405,171 @@ class SilkCommerce extends React.Component {
                 </CardContent>
               </Card>
             </Block>
-            <Block classes={'brick brick-3'}>brick-3</Block>
-            <Block classes={'brick brick-3'}>brick-3</Block>
-            <Block classes={'brick brick-3'}>brick-3</Block>
+            <Block classes={'brick brick-3'}>
+              <Card className={'e-background-white card-h flex'}>
+                <CardContent classes={'grow flex col-direction space-between e-text-center'}>
+                  <Chip data={ChipNew} classes={'e-text-uppercase'}/>
+                  <Block className={'e-text-center'}>
+                    <Image src={'assets/img/bags.png'} height={'220px'} />
+                  </Block>
+                  <Block>
+                    <Text type={'h3'} classes={'e-text-center'}> Reversible Leather </Text>
+                    <Text type={'h3'} classes={'e-text-center'}> Bomber Jacket</Text>
+                    <Text type={'p'} classes={'e-text-center e-body1 e-text-grey-600'}> Lorem ipsum dolor sit amet </Text>
+                  </Block>
+                  <Text type={'p'} classes={'e-text-center e-body1'}> $360
+                  </Text>
+                </CardContent>
+              </Card>
+            </Block>
+            <Block classes={'brick brick-3'}>
+              <Card className={'e-background-white card-h flex col-direction'}>
+                <CardContent classes={'grow flex col-direction space-between e-text-center e-background-grey-100'}>
+                  <Block className={'e-text-center'}>
+                    <Image src={'assets/img/jacket2.png'} height={'220px'} />
+                  </Block>
+                </CardContent>
+                <CardFooter>
+                <Block classes={'flex space-between'}>
+                  <Text type={'p'} classes={'e-text-center e-title'}> Reversible Leather </Text>
+                  <Text type={'p'} classes={'e-text-center e-title'}> $360</Text>
+                </Block>
+                <Text type={'p'} classes={'e-text-left e-body1 e-text-grey-600'}> Lorem ipsum dolor sit amet </Text>
+                <Block>
+                  <Icon name={"action-star-rate"} className={"e-text-yellow-A700 e-title"} />
+                  <Icon name={"action-star-rate"} className={"e-text-yellow-A700 e-title"} />
+                  <Icon name={"action-star-rate"} className={"e-text-yellow-A700 e-title"} />
+                  <Icon name={"action-star-rate"} className={"e-text-grey-300 e-title"} />
+                  <Icon name={"action-star-rate"} className={"e-text-grey-300 e-title"} />
+                </Block>
+                </CardFooter>
+              </Card>
+            </Block>
+            <Block classes={'brick brick-3'}>
+            <Card className={'e-background-white card-h flex'}>
+              <CardContent classes={'grow flex col-direction space-between'}>
+                <Block>
+                  <Text type={'h3'} classes={'e-text-center'}> Romanian Most Stylish Outdoor</Text>
+                </Block>
+                <Block className={'e-text-center'}>
+                  <Image src={'assets/img/jacket.png'} height={'220px'} />
+                </Block>
+                <Block className={'e-text-center'}>
+                  <Text type={'a'} classes={'e-text-center e-body1'}>
+                    <Icon name={"image-brightness-1"} className={"e-text-indigo-500"} />
+                  </Text>
+                  <Text type={'a'} classes={'e-text-center e-body1'}>
+                    <Icon name={"image-brightness-1"} className={"e-text-deep-purple-600"} />
+                  </Text>
+                  <Text type={'a'} classes={'e-text-center e-body1'}>
+                    <Icon name={"image-brightness-1"} className={"e-text-teal-700"} />
+                  </Text>
+                </Block>
+                <Text type={'p'} classes={'e-text-center e-body1'}>$180 </Text>
+              </CardContent>
+            </Card>
+            </Block>
           </Block>
+
+          <Block classes={'e-row'}>
+            <Block classes={'brick brick-6'}>
+              <Card classes={'bg-tshirt e-background-white card-h flex'}>
+                <CardContent classes={'grow flex col-direction'}>
+                  <Block classes={'brick-7 flex col-direction'}>
+                    <Block>
+                      <Chip data={ChipExclusive} classes={'e-text-uppercase'}/>
+                    </Block>
+                    <Text type={'h3'} classes={'e-text-left e-display-1 e-text-black e-padding-top-15'}> The Men of 2015 in Their Splandour  </Text>
+                    <Text type={'p'} classes={'e-body1 e-text-grey-600 e-padding-top-15'}>Lorem ipsum dolor sit amet, vel alia nominati efficiendi id, alterum impedit fuisset quo no, ius id sumo solum percipitur. </Text>
+                    <Block classes={'two-btn-cart e-margin-top-25 brick-8'}>
+                      <Btn label={'$125'} ripple={false} classes={'e-text-black e-no-margin e-text-uppercase'} />
+                      <Btn label={'add to chart'} ripple={false} classes={'e-text-black e-no-margin e-text-uppercase'} />
+                    </Block>
+                  </Block>
+                </CardContent>
+              </Card>
+            </Block>
+            <Block classes={'brick brick-3'}>
+              <Card classes={'e-background-teal-300 flex card-h'}>
+                <CardContent classes={'brick-8 flex top-bottom'}>
+                  <Chip data={ChipExclusiveBlack} classes={'e-text-uppercase'}/>
+                  <Image src={'assets/img/shoes.png'} height={'150px'} alt={'shoes'}/>
+                  <Text type={'h3'} classes={'e-text-center e-text-white e-title'}> Lorem ipsum dolor sit amet </Text>
+                  <Btn label={'$152'} ripple={true} classes={'flat e-background-teal-300 e-text-white e-text-uppercase explore-btn'} />
+                </CardContent>
+              </Card>
+            </Block>
+            <Block classes={'brick brick-3'}>
+              <Card classes={'e-background-white card-h flex col-direction'}>
+                <CardContent classes={'grow'}>
+                  <Text type={'h3'} classes={'e-text-center'}> Reversible Leather </Text>
+                  <Text type={'h3'} classes={'e-text-center'}> Bomber Jacket</Text>
+                  <Text type={'p'} classes={'e-text-center e-body1 e-text-grey-600'}> Lorem ipsum dolor sit amet </Text>
+                  <Block className={'e-text-center'}>
+                    <Image src={'assets/img/make-up.png'} height={'200px'} />
+                  </Block>
+                </CardContent>
+                <CardFooter classes={'e-background-grey-900 e-text-center'}>
+                 <Text type={'strong'} classes={'e-text-center e-body2 e-no-margin e-text-grey-100 e-text-uppercase v-align-tt'}> $135 </Text>
+                </CardFooter>
+              </Card>
+            </Block>
+          </Block>
+
+          <Block classes={'e-row'}>
+            <Block classes={'brick brick-12'}>
+              <Card classes={'e-background-white'}>
+                <CardHeader className={'border-b card-h-padding'}>
+                  <Block classes={'flex space-between'}>
+                    <Text type={'strong'} classes={'e-text-left e-body2 e-no-margin e-text-black e-text-uppercase'}> Viena </Text>
+                    <Block classes={'navigation-btn'}>
+                      <Btn icon={"hardware-keyboard-arrow-left"} ripple={false} type={'default'} classes={'e-text-grey-900 e-no-margin'} />
+                      <Btn icon={"hardware-keyboard-arrow-right"} ripple={false} type={'default'} classes={'e-text-grey-900 e-no-margin'} />
+                    </Block>
+                  </Block>
+                </CardHeader>
+                <CardContent classes={'flex space-between'}>
+                  <Block classes={'brick brick-3 flex'}>
+                    <Image src={'assets/img/jacket.png'} height={'95px'} width={'75px'} className={'margin-r-15'} />
+                    <Block>
+                      <Text type={'strong'} classes={'e-text-left e-subhead'}> Reversible Leather</Text>
+                      <Text type={'strong'} classes={'e-text-left e-subhead'}> Bomber Jacket</Text>
+                      <Text type={'p'} classes={'e-text-left e-subhead e-text-grey-600'}> Lorem ipsum dolor sit amet</Text>
+                      <Text type={'strong'} classes={'e-text-left e-subhead'}> $180</Text>
+                    </Block>
+                  </Block>
+                  <Block classes={'brick brick-3 flex'}>
+                    <Image src={'assets/img/jacket2.png'} height={'95px'} width={'75px'} className={'margin-r-15'} />
+                    <Block>
+                      <Text type={'strong'} classes={'e-text-left e-subhead'}> Reversible Leather</Text>
+                      <Text type={'strong'} classes={'e-text-left e-subhead'}> Bomber Jacket</Text>
+                      <Text type={'p'} classes={'e-text-left e-subhead e-text-grey-600'}> Lorem ipsum dolor sit amet</Text>
+                      <Text type={'strong'} classes={'e-text-left e-subhead'}> $180</Text>
+                    </Block>
+                  </Block>
+                  <Block classes={'brick brick-3 flex'}>
+                    <Image src={'assets/img/jacket.png'} height={'95px'} width={'75px'} className={'margin-r-15'} />
+                    <Block>
+                      <Text type={'strong'} classes={'e-text-left e-subhead'}> Reversible Leather</Text>
+                      <Text type={'strong'} classes={'e-text-left e-subhead'}> Bomber Jacket</Text>
+                      <Text type={'p'} classes={'e-text-left e-subhead e-text-grey-600'}> Lorem ipsum dolor sit amet</Text>
+                      <Text type={'strong'} classes={'e-text-left e-subhead'}> $180</Text>
+                    </Block>
+                  </Block>
+                  <Block classes={'brick brick-3 flex'}>
+                    <Image src={'assets/img/jacket2.png'} height={'95px'} width={'75px'} className={'margin-r-15'} />
+                    <Block>
+                      <Text type={'strong'} classes={'e-text-left e-subhead'}> Reversible Leather</Text>
+                      <Text type={'strong'} classes={'e-text-left e-subhead'}> Bomber Jacket</Text>
+                      <Text type={'p'} classes={'e-text-left e-subhead e-text-grey-600'}> Lorem ipsum dolor sit amet</Text>
+                      <Text type={'strong'} classes={'e-text-left e-subhead'}> $180</Text>
+                    </Block>
+                  </Block>
+                </CardContent>
+              </Card>
+            </Block>
+          </Block>
+
         </Block>
       </Block>
     );
