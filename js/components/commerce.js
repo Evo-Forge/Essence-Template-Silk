@@ -1,32 +1,93 @@
 import React from 'react';
 import ClassNames from 'classnames';
 
-import { Block,
-        Btn,
+import { Block, Btn,
         Card, CardHeader, CardContent, CardFooter, Chip,
         Divider,
-        Icon,
-        Image,
+        Icon, Image, Input,
         List, ListItem,
         Menu,
         Slider,
-        Text } from 'react-essence';
+        Tab, Text } from 'react-essence';
 
 var ChipNew = {
   name: 'ChipNew',
   text: [<span className={'e-text-white'}>new</span>],
   deletable: false,
-}
+};
 var ChipExclusive = {
   name: 'ChipExclusive',
   text: [<span className={'e-text-white'}>exclusive</span>],
   deletable: false,
-}
+};
 var ChipExclusiveBlack = {
   name: 'ChipExclusiveBlack',
   text: [<span className={'e-text-white'}>exclusive</span>],
   deletable: false,
-}
+};
+
+var tabs = {
+ 'header': [
+   { 'context': (<Text classes={'e-text-grey-900'}>Description</Text>) },
+   { 'context': (<Text classes={'e-text-grey-900'}>Shipping</Text>) },
+   { 'context': (<Text classes={'e-text-grey-900'}>Sizing</Text>) },
+   { 'context': (<Text classes={'e-text-grey-900'}>Reviews</Text>) }
+  ],
+  'rows': [
+   (<Block>
+      <Text type={'p'} classes={'e-text-left e-body1 e-padding-top-15'}>
+        Lorem ipsum dolor sit amet, te unum legendos persequeris vix, duo ullum malorum adolescens id. Te duis virtute per, forensibus dissentiet te eos. Id cum nisl tritani prompta, solum dicant graece vis in, qui in prima quodsi scripta. Vim dictas pertinax et.
+      </Text>
+      <Block classes={'brick-6'}>
+        <List classes={'flex space-between top-bottom'}>
+          <ListItem>Lorem ipsum</ListItem>
+          <ListItem>Lorem ipsum</ListItem>
+          <ListItem>Lorem ipsum</ListItem>
+          <ListItem>Lorem ipsum</ListItem>
+        </List>
+      </Block>
+      <Block classes={'flex start'}>
+        <Block className={'margin-r-15'}>
+          <Text type={'span'} classes={'e-text-left e-subhead show e-text-uppercase'}>Colors </Text>
+          <Block classes={'flex start'}>
+            <Btn ripple={false} type={'fab-mini'} className={'fab-mini fab-look e-background-brown-600'} />
+            <Btn ripple={false} type={'fab-mini'} className={'fab-mini fab-look e-background-deep-orange-800'} />
+            <Btn ripple={false} type={'fab-mini'} className={'fab-mini fab-look e-background-teal-600'} />
+          </Block>
+        </Block>
+        <Block>
+          <Text type={'span'} classes={'e-text-left e-subhead show e-text-uppercase'}>Size </Text>
+          <Block classes={'flex start'}>
+            <Btn label={'38'} ripple={false} type={'fab-mini'} className={'fab-mini fab-look e-background-white'} />
+            <Btn label={'39'} ripple={false} type={'fab-mini'} className={'fab-mini fab-look e-background-white'} />
+            <Btn label={'40'} ripple={false} type={'fab-mini'} className={'fab-mini fab-look e-text-white e-background-black'} />
+            <Btn label={'41'} ripple={false} type={'fab-mini'} className={'fab-mini fab-look e-background-white'} />
+            <Btn label={'42'} ripple={false} type={'fab-mini'} className={'fab-mini fab-look e-background-white'} />
+            <Btn label={'43'} ripple={false} type={'fab-mini'} className={'fab-mini fab-look e-background-white'} />
+          </Block>
+        </Block>
+      </Block>
+      <Block classes={'e-padding-top-15 flex start align-center'}>
+        <Text type={'span'} classes={'e-text-left e-title e-text-blue-700 margin-r-15'}>
+          <Text type={'strong'}> $320 </Text>
+        </Text>
+        <Text type={'span'} classes={'e-text-center e-body1 e-text-grey-600 sell'}> $420 </Text>
+      </Block>
+      <Block classes={'flex start align-center'}>
+        <Text type={'span'} classes={'e-text-left e-button margin-r-15 margin-t-7'}> Quantity </Text>
+        <Input type={'number'} name={'label'} placeholder={'1'} hint={'1'} min="0" max="999" classes={'input-look margin-r-15'}/>
+        <Block classes={'two-btn-cart e-background-grey-900 margin-r-15 margin-t-7'}>
+          <Btn icon={"action-shopping-cart"} ripple={true} classes={'e-text-grey-100 e-no-margin e-text-uppercase'} />
+          <Btn label={'add to cart'} ripple={true} classes={'e-text-grey-100 e-no-margin e-text-uppercase'} />
+        </Block>
+      </Block>
+    </Block>),
+   (<Text>This is the context for Tab 2</Text>),
+   (<Text>This is the context for Tab 3</Text>),
+   (<Text>This is the context for Tab 4</Text>)
+ ]
+};
+
 class SilkCommerce extends React.Component {
 
   render() {
@@ -521,7 +582,7 @@ class SilkCommerce extends React.Component {
               <Card classes={'e-background-white'}>
                 <CardHeader className={'border-b card-h-padding'}>
                   <Block classes={'flex space-between'}>
-                    <Text type={'strong'} classes={'e-text-left e-body2 e-no-margin e-text-black e-text-uppercase'}> Viena </Text>
+                    <Text type={'strong'} classes={'e-text-left e-body2 e-no-margin e-text-black e-text-uppercase'}> Related items </Text>
                     <Block classes={'navigation-btn'}>
                       <Btn icon={"hardware-keyboard-arrow-left"} ripple={false} type={'default'} classes={'e-text-grey-900 e-no-margin'} />
                       <Btn icon={"hardware-keyboard-arrow-right"} ripple={false} type={'default'} classes={'e-text-grey-900 e-no-margin'} />
@@ -570,6 +631,158 @@ class SilkCommerce extends React.Component {
             </Block>
           </Block>
 
+          <Block classes={'e-row'}>
+            <Block classes={'brick brick-12'}>
+            <Card classes={'e-background-white'}>
+              <CardContent classes={'e-no-padding flex space-between'}>
+                <Block classes={'brick-6 e-no-margin'}>
+                  <Image src={'assets/img/dress.jpg'} alt={'dress'} classes={'e-img-rsp full-w margin-b-img'} />
+                </Block>
+                <Block classes={'brick-6 e-no-margin e-text-left grow flex col-direction space-between'}>
+                  <Block classes={'padding-16 border-b grow flex col-direction space-around e-margin-top-15'}>
+                    <Text type={'p'} classes={'e-text-left e-body1 e-text-grey-600 e-text-uppercase'}> Spring-Summer collection </Text>
+                    <Text type={'h3'} classes={'e-text-left e-display-1 e-text-black'}> Military Brown Skirt </Text>
+                    <Block classes={'flex space-between'}>
+                      <Text type={'span'} classes={'e-text-left e-title'}> $165</Text>
+                      <Block>
+                        <Icon name={"action-star-rate"} className={"e-text-yellow-A700 e-title"} />
+                        <Icon name={"action-star-rate"} className={"e-text-yellow-A700 e-title"} />
+                        <Icon name={"action-star-rate"} className={"e-text-yellow-A700 e-title"} />
+                        <Icon name={"action-star-rate"} className={"e-text-grey-300 e-title"} />
+                        <Icon name={"action-star-rate"} className={"e-text-grey-300 e-title"} />
+                      </Block>
+                    </Block>
+                    <Block classes={'flex space-between line-h-2'}>
+                      <Btn label={'description'} ripple={true} type={'button'} classes={'e-text-white e-background-grey-900 e-button e-no-margin explore-btn'} />
+                      <Btn label={'shopping'} ripple={true} type={'button'} classes={'e-text-black e-button e-no-margin explore-btn'} />
+                      <Btn label={'sizes'} ripple={true} type={'button'} classes={'e-text-black e-button e-no-margin explore-btn'} />
+                      <Btn label={'reviews'} ripple={true} type={'button'} classes={'e-text-black e-button e-no-margin explore-btn'} />
+                    </Block>
+                    <Text type={'p'} classes={'e-text-left e-body1'}>
+                      Lorem ipsum dolor sit amet, te unum legendos persequeris vix, duo ullum malorum adolescens id. Te duis virtute per, forensibus dissentiet te eos. Id cum nisl tritani prompta, solum dicant graece vis in, qui in prima quodsi scripta. Vim dictas pertinax et.
+                    </Text>
+                    <Block classes={'flex space-between'}>
+                      <Block classes={'brick-6'}>
+                        <Text type={'span'} classes={'e-text-left e-subhead show e-text-uppercase'}>Colors </Text>
+                        <Block classes={'flex start'}>
+                          <Btn ripple={false} type={'fab-mini'} className={'fab-mini fab-look e-background-brown-600'} />
+                          <Btn ripple={false} type={'fab-mini'} className={'fab-mini fab-look e-background-deep-orange-800'} />
+                          <Btn ripple={false} type={'fab-mini'} className={'fab-mini fab-look e-background-teal-600'} />
+                          <Btn ripple={false} type={'fab-mini'} className={'fab-mini fab-look e-background-blue-grey-800'} />
+                        </Block>
+                      </Block>
+                      <Block classes={'brick-6'}>
+                        <Text type={'span'} classes={'e-text-left e-subhead show e-text-uppercase'}>Size </Text>
+                        <Block classes={'flex start'}>
+                          <Btn label={'S'} ripple={false} type={'fab-mini'} className={'fab-mini fab-look e-background-white'} />
+                          <Btn label={'M'} ripple={false} type={'fab-mini'} className={'fab-mini fab-look e-text-white e-background-black'} />
+                          <Btn label={'L'} ripple={false} type={'fab-mini'} className={'fab-mini fab-look e-background-white'} />
+                          <Btn label={'XL'} ripple={false} type={'fab-mini'} className={'fab-mini fab-look e-background-white'} />
+                        </Block>
+                      </Block>
+                    </Block>
+                  </Block>
+                  <Block classes={'padding-16 e-background-grey-100 flex start'}>
+                    <Block classes={'two-btn-cart e-background-blue-600 margin-r-15'}>
+                      <Btn icon={"action-shopping-cart"} ripple={true} classes={'e-text-grey-100 e-no-margin e-text-uppercase'} />
+                      <Btn label={'add to cart'} ripple={true} classes={'e-text-grey-100 e-no-margin e-text-uppercase'} />
+                    </Block>
+                    <Block classes={'two-btn-cart e-background-white'}>
+                      <Btn icon={"action-favorite"} ripple={true} classes={'e-text-grey-600 e-no-margin e-text-uppercase'} />
+                      <Btn label={'add to wishlist'} ripple={true} classes={'e-no-margin e-text-uppercase'} />
+                    </Block>
+                  </Block>
+                </Block>
+              </CardContent>
+            </Card>
+            </Block>
+          </Block>
+
+          <Block classes={'e-row'}>
+            <Block classes={'brick brick-12'}>
+              <Card classes={'e-background-white'}>
+                <CardContent classes={'e-no-padding flex space-between'}>
+                  <Block classes={'brick-6 e-no-margin border-r padding-16 tab-display'}>
+                    <Text type={'h3'} classes={'e-text-left e-display-1 e-text-black e-margin-top-15'}> Black Sport Shoe </Text>
+                    <Text type={'p'} classes={'e-text-left e-body1 e-text-grey-600 e-text-uppercase'}> Spring-Summer collection </Text>
+                    <Tab
+                      data={tabs}
+                      classes={'e-background-white e-text-grey-50 e-margin-top-15'}
+                      indicator={'e-background-grey-500'}/>
+                  </Block>
+                  <Block classes={'brick-6 e-no-margin padding-16 flex top-bottom space-between align-center'}>
+                    <Block classes={'brick-12'}>
+                      <Image src={'assets/img/pearshoe.jpg'} classes={'e-img-rsp full-w'} />
+                    </Block>
+                    <Block classes={'brick-3'}>
+                      <Image src={'assets/img/backshoe.jpg'} classes={'e-img-rsp full-w'} />
+                    </Block>
+                    <Block classes={'brick-3'}>
+                      <Image src={'assets/img/bigshoe.jpg'} classes={'e-img-rsp full-w'} />
+                    </Block>
+                    <Block classes={'brick-3'}>
+                      <Image src={'assets/img/pearshoe.jpg'} classes={'e-img-rsp full-w img-active'} height={'136px'}/>
+                    </Block>
+                    <Block classes={'brick-3'}>
+                      <Image src={'assets/img/bigshoe.jpg'} classes={'e-img-rsp full-w'} />
+                    </Block>
+                  </Block>
+                </CardContent>
+              </Card>
+            </Block>
+          </Block>
+
+          <Block classes={'e-row'}>
+            <Block classes={'brick brick-12'}>
+            <Card classes={'e-background-white card-h flex'}>
+              <CardContent classes={'e-no-padding grow flex'}>
+                <Block classes={'brick-3 padding-16 grow e-background-grey-100 e-no-margin border-r flex col-direction space-between'}>
+                  <Block>
+                    <Text type={'h3'} classes={'e-text-left e-display-1 e-text-black e-margin-top-15'}> Most loved items </Text>
+                    <Text type={'p'} classes={'e-text-left e-body1 e-text-grey-600'}> Lorem ipsum dolor sit amet, albucius scaevola ea mea, aeque putent vis in. Facete definitiones concludaturque sit te, eos purto corrumpit ea, at nec suas quot fabellas. Ne cibo sale sed. </Text>
+                  </Block>
+                  <Block classes={'flex space-between align-center'}>
+                    <Block classes={'navigation-btn'}>
+                      <Btn icon={"hardware-keyboard-arrow-left"} ripple={false} type={'default'} classes={'e-text-grey-900 e-no-margin'} />
+                      <Btn icon={"hardware-keyboard-arrow-right"} ripple={false} type={'default'} classes={'e-text-grey-900 e-no-margin'} />
+                    </Block>
+                    <Text type={'span'} classes={'e-text-right e-body1 e-text-grey-600'}> 3/5 </Text>
+                  </Block>
+                </Block>
+                <Block classes={'brick-3 padding-16 flex col-direction space-between border-r e-no-margin'}>
+                  <Text type={'h3'} classes={'e-text-center'}> Reversible Leather </Text>
+                  <Text type={'p'} classes={'e-text-center e-body1 e-text-grey-600'}> Lorem ipsum dolor sit amet </Text>
+                  <Block className={'e-text-center'}>
+                    <Image src={'assets/img/jacket.png'} height={'220px'} />
+                  </Block>
+                  <Text type={'p'} classes={'e-text-center e-body1'}>
+                    <Text type={'strong'}>$360 </Text>
+                  </Text>
+                </Block>
+                <Block classes={'brick-3 padding-16 flex col-direction space-between border-r e-no-margin'}>
+                  <Text type={'h3'} classes={'e-text-center'}> Reversible Leather </Text>
+                  <Text type={'p'} classes={'e-text-center e-body1 e-text-grey-600'}> Lorem ipsum dolor sit amet </Text>
+                  <Block className={'e-text-center'}>
+                    <Image src={'assets/img/jacket2.png'} height={'220px'} />
+                  </Block>
+                  <Text type={'p'} classes={'e-text-center e-body1'}>
+                    <Text type={'strong'}>$360 </Text>
+                  </Text>
+                </Block>
+                <Block classes={'brick-3 padding-16 flex col-direction space-between border-r e-no-margin'}>
+                  <Text type={'h3'} classes={'e-text-center'}> Reversible Leather </Text>
+                  <Text type={'p'} classes={'e-text-center e-body1 e-text-grey-600'}> Lorem ipsum dolor sit amet </Text>
+                  <Block className={'e-text-center'}>
+                    <Image src={'assets/img/tshirt.png'} height={'220px'} />
+                  </Block>
+                  <Text type={'p'} classes={'e-text-center e-body1'}>
+                    <Text type={'strong'}>$360 </Text>
+                  </Text>
+                </Block>
+              </CardContent>
+            </Card>
+            </Block>
+          </Block>
         </Block>
       </Block>
     );

@@ -140,7 +140,7 @@
   margin-bottom: -6px;
 }
 .silkBlogMagazine .navigation-btn {
-  border: 2px solid #eee;
+  border: 1px solid #eee;
   border-radius: 25px;
   height: 24px;
 }
@@ -150,6 +150,7 @@
   font-weight: bold;
   border: 0;
   padding: 1px 0;
+  background: transparent;
 }
 .silkBlogMagazine .navigation-btn button:focus {
   outline: none;
@@ -345,9 +346,10 @@
   height: 172px;
   overflow-y: scroll;
 }
-.silkCommerce .scoll-style::-webkit-scrollbar-track {
+.silkCommerce .scroll-style::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #757575;
+  background-color: #eee;
+  border-radius: 4px;
 }
 .silkCommerce .scroll-style::-webkit-scrollbar {
   width: 5px;
@@ -423,6 +425,45 @@
 }
 .silkCommerce .navigation-btn button:first-child {
   border-right: 1px solid lightgrey;
+}
+.silkCommerce .margin-b-img {
+  margin-bottom: -6px;
+}
+.silkCommerce .e-tabs {
+  border-bottom: 1px solid lightgrey;
+}
+.silkCommerce .e-tabs .e-row {
+  padding: 0;
+}
+.silkCommerce .e-tabs-container .e-tab-content.active {
+  height: 322px;
+}
+.silkCommerce .tab-display .e-shadow-1 {
+  box-shadow: none!important;
+  padding-top: 0!important;
+}
+.silkCommerce .input-look {
+  width: 50px;
+}
+.silkCommerce .input-look .e-input:not(textarea):not(select),
+.silkCommerce .input-look .e-input:focus:not(textarea):not(select),
+.silkCommerce .input-look .e-input.focus:not(textarea):not(select) {
+  height: 36px;
+  padding-bottom: 0;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+}
+.silkCommerce .input-look .e-input:focus ~ .e-input-efects:after,
+.silkCommerce .input-look .e-input.focus ~ .e-input-efects:after {
+  display: none;
+}
+.silkCommerce .margin-t-7 {
+  margin-top: 7px;
+}
+.silkCommerce .img-active {
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 .silkWidgets .flex {
   display: flex;
@@ -573,7 +614,7 @@
   margin-top: 9px;
 }
 .silkWidgets .navigation-btn {
-  border: 2px solid #eee;
+  border: 1px solid #eee;
   border-radius: 25px;
   height: 24px;
 }
@@ -583,6 +624,7 @@
   font-weight: bold;
   border: 0;
   padding: 1px 0;
+  background: transparent;
 }
 .silkWidgets .navigation-btn button:focus {
   outline: none;

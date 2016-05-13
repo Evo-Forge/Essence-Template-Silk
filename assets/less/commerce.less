@@ -129,18 +129,19 @@
     height: 172px;
     overflow-y: scroll;
   }
-  .scoll-style::-webkit-scrollbar-track {
+  .scroll-style::-webkit-scrollbar-track {
 	  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  	background-color: #757575;
+  	background-color: #eee;
+    border-radius: 4px;
   }
   .scroll-style::-webkit-scrollbar {
-	width: 5px;
-	background-color:#eee;
+  	width: 5px;
+  	background-color:#eee;
   }
   .scroll-style::-webkit-scrollbar-thumb {
-	background-color: #757575;
-  border-radius: 4px;
-	border: 0;
+  	background-color: #757575;
+    border-radius: 4px;
+  	border: 0;
   }
   .padding-menu {
     padding: 5px 15px;
@@ -208,5 +209,47 @@
     button:first-child {
       border-right: 1px solid lightgrey;
     }
+  }
+  .margin-b-img {
+    margin-bottom: -6px;
+  }
+  .e-tabs {
+    border-bottom: 1px solid lightgrey;
+    .e-row {
+      padding: 0;
+    }
+  }
+  .e-tabs-container .e-tab-content.active {
+    height: 322px;
+  }
+  .tab-display {
+    .e-shadow-1 {
+    box-shadow: none!important;
+    padding-top: 0!important;
+    }
+  }
+  .input-look {
+    width: 50px;
+    .e-input {
+      &, &:focus, &.focus {
+        &:not(textarea):not(select) {
+          height: 36px;
+          padding-bottom: 0;
+          border: 1px solid lightgrey;
+          border-radius: 4px;
+        }
+      }
+    }
+    .e-input:focus ~ .e-input-efects:after, .e-input.focus ~ .e-input-efects:after {
+      display: none;
+    }
+  }
+  .margin-t-7 {
+    margin-top: 7px;
+  }
+  .img-active {
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 4px;
   }
 }

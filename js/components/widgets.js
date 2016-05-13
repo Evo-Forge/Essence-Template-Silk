@@ -355,8 +355,8 @@ class SilkWidgets extends React.Component {
                   <Block classes={'flex space-between'}>
                     <Text type={'strong'} classes={'e-text-left e-body2 e-no-margin e-text-black e-text-uppercase'}> Viena </Text>
                     <Block classes={'navigation-btn'}>
-                      <Btn icon={"hardware-keyboard-arrow-left"} ripple={false} type={'default'} classes={'e-text-grey-900 e-no-margin e-background-white'} />
-                      <Btn icon={"hardware-keyboard-arrow-right"} ripple={false} type={'default'} classes={'e-text-grey-900 e-no-margin e-background-white'} />
+                      <Btn icon={"hardware-keyboard-arrow-left"} ripple={false} type={'default'} classes={'e-text-grey-900 e-no-margin'} />
+                      <Btn icon={"hardware-keyboard-arrow-right"} ripple={false} type={'default'} classes={'e-text-grey-900 e-no-margin'} />
                     </Block>
                   </Block>
                 </CardHeader>

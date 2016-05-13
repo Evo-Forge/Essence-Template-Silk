@@ -384,13 +384,15 @@ class SilkBlogMagazine extends React.Component {
           <Block classes={'e-row'}>
             <Block classes={'brick brick-6'}>
               <Card className={'e-background-white'}>
-                <CardHeader classes={'flex space-between border-b'}>
-                  <Block>
-                    <Text type={'strong'} classes={'e-text-left e-subhead e-text-uppercase e-no-margin'}>Most recent</Text>
-                  </Block>
-                  <Block classes={'navigation-btn'}>
-                    <Btn icon={"hardware-keyboard-arrow-left"} ripple={true} type={'default'} classes={'e-text-grey-900 e-no-margin e-background-white'} />
-                    <Btn icon={"hardware-keyboard-arrow-right"} ripple={true} type={'default'} classes={'e-text-grey-900 e-no-margin e-background-white'} />
+                <CardHeader classes={' border-b'}>
+                  <Block classes={'flex space-between'}>
+                    <Block>
+                      <Text type={'strong'} classes={'e-text-left e-subhead e-text-uppercase e-no-margin'}>Most recent</Text>
+                    </Block>
+                    <Block classes={'navigation-btn'}>
+                      <Btn icon={"hardware-keyboard-arrow-left"} ripple={true} type={'default'} classes={'e-text-grey-900 e-no-margin'} />
+                      <Btn icon={"hardware-keyboard-arrow-right"} ripple={true} type={'default'} classes={'e-text-grey-900 e-no-margin'} />
+                    </Block>
                   </Block>
                 </CardHeader>
                 <CardContent classes={'flex'}>
